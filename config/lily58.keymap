@@ -97,11 +97,11 @@
 
             display-name = "Base";
             bindings = <
-&kp ESC         &kp N1  &kp N2  &kp N3        &kp N4          &kp N5                       &kp N6       &kp N7           &kp N8           &kp N9   &kp N0    &kp DELETE
-&kp TAB         &kp Q   &kp W   &kp E         &kp R           &kp T                        &kp Y        &kp U            &kp I            &kp O    &kp P     &kp BACKSLASH
-&kp LCTRL       &kp A   &kp S   &kp D         &kp F           &kp G                        &kp H        &kp J            &kp K            &kp L    &kp SEMI  &kp SQT
-&kp LEFT_SHIFT  &kp Z   &kp X   &kp C         &kp V           &kp B        &none    &none  &kp N        &kp M            &kp COMMA        &kp DOT  &kp FSLH  &kp RSHFT
-                                &kp LEFT_ALT  &lt 3 LEFT_GUI  &lt 1 SPACE  &none    &none  &lt 2 ENTER  &lt 4 BACKSPACE  &lt 4 RIGHT_ALT
+&kp ESC              &kp N1  &kp N2  &kp N3        &kp N4          &kp N5                       &kp N6       &kp N7           &kp N8                  &kp N9   &kp N0    &kp DELETE
+&kp TAB              &kp Q   &kp W   &kp E         &kp R           &kp T                        &kp Y        &kp U            &kp I                   &kp O    &kp P     &kp BACKSLASH
+&mt LCTRL RIGHT_ALT  &kp A   &kp S   &kp D         &kp F           &kp G                        &kp H        &kp J            &kp K                   &kp L    &kp SEMI  &kp SQT
+&kp LEFT_SHIFT       &kp Z   &kp X   &kp C         &kp V           &kp B        &none    &none  &kp N        &kp M            &kp COMMA               &kp DOT  &kp FSLH  &kp RSHFT
+                                     &kp LEFT_ALT  &lt 3 LEFT_GUI  &lt 1 SPACE  &none    &none  &lt 2 ENTER  &lt 4 BACKSPACE  &mt CAPSLOCK RIGHT_ALT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -119,8 +119,8 @@
             bindings = <
 &kp N6  &kp N7  &kp N8  &kp N9     &kp N0           &kp BACKSPACE                           &kp CAPSLOCK  &kp KP_NUMLOCK   &kp SLASH        &kp ASTERISK     &kp MINUS     &kp K_PLAY_PAUSE
 &kp Y   &kp U   &kp I   &kp O      &kp P            &kp NON_US_BACKSLASH                    &kp INSERT    &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp PLUS      &kp K_MUTE
-&kp H   &kp J   &kp K   &kp L      &kp SEMICOLON    &kp SQT                                 &kp HOME      &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_ENTER  &trans
-&kp N   &kp N   &kp M   &kp COMMA  &kp PERIOD       &kp SLASH             &trans    &trans  &kp END       &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &trans        &trans
+&kp H   &kp J   &kp K   &kp L      &kp SEMICOLON    &kp SQT                                 &kp HOME      &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_ENTER  &kp K_PREVIOUS
+&kp N   &kp N   &kp M   &kp COMMA  &kp PERIOD       &kp SLASH             &trans    &trans  &kp END       &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &trans        &kp K_NEXT
                         &kp ENTER  &kp RIGHT_SHIFT  &trans                &trans    &trans  &trans        &kp KP_NUMBER_0  &kp PERIOD
             >;
 
@@ -137,8 +137,8 @@
 
             display-name = "Right";
             bindings = <
-&kp TILDE  &trans  &trans  &trans   &trans   &trans                     &trans         &trans    &trans    &trans  &trans     &kp DELETE
-&kp GRAVE  &kp N1  &kp N2  &kp N3   &kp N4   &kp N5                     &kp N6         &kp N7    &kp N8    &kp N9  &kp N0     &trans
+&kp GRAVE  &trans  &trans  &trans   &trans   &trans                     &trans         &trans    &trans    &trans  &trans     &kp DELETE
+&kp TILDE  &kp N1  &kp N2  &kp N3   &kp N4   &kp N5                     &kp N6         &kp N7    &kp N8    &kp N9  &kp N0     &trans
 &kp F1     &kp F2  &kp F3  &kp F4   &kp F5   &kp F6                     &kp PAGE_UP    &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans
 &kp F7     &kp F8  &kp F9  &kp F10  &kp F11  &kp F12  &trans    &trans  &kp PAGE_DOWN  &trans    &trans    &trans  &trans     &trans
                            &trans   &trans   &trans   &trans    &trans  &trans         &trans    &trans
