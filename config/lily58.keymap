@@ -16,71 +16,99 @@
         LShiftCombo {
             bindings = <&kp LEFT_SHIFT>;
             key-positions = <25 26>;
+            slow-release;
+            require-prior-idle-ms = <50>;
         };
 
         LControlCombo {
             bindings = <&kp LCTRL>;
             key-positions = <26 27>;
+            slow-release;
+            require-prior-idle-ms = <50>;
         };
 
         LAltCombo {
             bindings = <&kp LEFT_ALT>;
             key-positions = <27 28>;
+            slow-release;
+            require-prior-idle-ms = <50>;
         };
 
         LCtrlLShiftCombo {
             bindings = <&kp LC(LEFT_SHIFT)>;
             key-positions = <25 26 27>;
+            slow-release;
+            require-prior-idle-ms = <50>;
         };
 
         LCtrlLAltCombo {
             bindings = <&kp LC(LEFT_ALT)>;
             key-positions = <26 27 28>;
+            slow-release;
+            require-prior-idle-ms = <50>;
         };
 
         LCtrlLShiftLAltCombo {
             bindings = <&kp LC(LA(LEFT_SHIFT))>;
             key-positions = <25 26 27 28>;
+            slow-release;
+            require-prior-idle-ms = <50>;
         };
 
         RShiftCombo {
             bindings = <&kp RSHIFT>;
             key-positions = <34 33>;
+            slow-release;
+            require-prior-idle-ms = <50>;
         };
 
         RCtrlCombo {
             bindings = <&kp LEFT_CONTROL>;
             key-positions = <33 32>;
+            slow-release;
+            require-prior-idle-ms = <50>;
         };
 
         RAltCombo {
             bindings = <&kp LEFT_ALT>;
             key-positions = <31 32>;
+            slow-release;
+            require-prior-idle-ms = <50>;
         };
 
         RCtrlRShiftCombo {
             bindings = <&kp LC(RIGHT_SHIFT)>;
             key-positions = <34 33 32>;
+            slow-release;
+            require-prior-idle-ms = <50>;
         };
 
         RCtrlRAltCombo {
             bindings = <&kp LC(LEFT_ALT)>;
             key-positions = <32 31 33>;
+            slow-release;
+            require-prior-idle-ms = <50>;
         };
 
         RCtrlRShiftRAltCombo {
             bindings = <&kp LC(LA(RIGHT_SHIFT))>;
             key-positions = <31 32 33 34>;
+            slow-release;
+            require-prior-idle-ms = <50>;
         };
 
         LGuiCombo {
             bindings = <&kp LEFT_GUI>;
             key-positions = <28 29>;
+            slow-release;
+            require-prior-idle-ms = <50>;
         };
 
         RGuiCombo {
             bindings = <&kp RIGHT_GUI>;
             key-positions = <31 30>;
+            slow-release;
+            require-prior-idle-ms = <50>;
         };
     };
 
@@ -97,11 +125,11 @@
 
             display-name = "Base";
             bindings = <
-&kp ESC              &kp N1  &kp N2  &kp N3        &kp N4          &kp N5                       &kp N6       &kp N7           &kp N8                  &kp N9   &kp N0    &kp DELETE
-&kp TAB              &kp Q   &kp W   &kp E         &kp R           &kp T                        &kp Y        &kp U            &kp I                   &kp O    &kp P     &kp BACKSLASH
-&mt LCTRL RIGHT_ALT  &kp A   &kp S   &kp D         &kp F           &kp G                        &kp H        &kp J            &kp K                   &kp L    &kp SEMI  &kp SQT
-&kp LEFT_SHIFT       &kp Z   &kp X   &kp C         &kp V           &kp B        &none    &none  &kp N        &kp M            &kp COMMA               &kp DOT  &kp FSLH  &kp RSHFT
-                                     &kp LEFT_ALT  &lt 3 LEFT_GUI  &lt 1 SPACE  &none    &none  &lt 2 ENTER  &lt 4 BACKSPACE  &mt CAPSLOCK RIGHT_ALT
+&kp ESC             &kp N1  &kp N2  &kp N3        &kp N4          &kp N5                       &kp N6       &kp N7           &kp N8         &kp N9   &kp N0    &kp DELETE
+&kp TAB             &kp Q   &kp W   &kp E         &kp R           &kp T                        &kp Y        &kp U            &kp I          &kp O    &kp P     &kp BACKSLASH
+&mt LCTRL CAPSLOCK  &kp A   &kp S   &kp D         &kp F           &kp G                        &kp H        &kp J            &kp K          &kp L    &kp SEMI  &kp SQT
+&kp LEFT_SHIFT      &kp Z   &kp X   &kp C         &kp V           &kp B        &none    &none  &kp N        &kp M            &kp COMMA      &kp DOT  &kp FSLH  &kp RSHFT
+                                    &kp LEFT_ALT  &lt 3 LEFT_GUI  &lt 1 SPACE  &none    &none  &lt 2 ENTER  &lt 4 BACKSPACE  &kp RIGHT_ALT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -117,10 +145,10 @@
 
             display-name = "Left";
             bindings = <
-&kp N6  &kp N7  &kp N8  &kp N9     &kp N0           &kp BACKSPACE                           &kp CAPSLOCK  &kp KP_NUMLOCK   &kp SLASH        &kp ASTERISK     &kp MINUS     &kp K_PLAY_PAUSE
-&kp Y   &kp U   &kp I   &kp O      &kp P            &kp NON_US_BACKSLASH                    &kp INSERT    &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp PLUS      &kp K_MUTE
-&kp H   &kp J   &kp K   &kp L      &kp SEMICOLON    &kp SQT                                 &kp HOME      &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_ENTER  &kp K_PREVIOUS
-&kp N   &kp N   &kp M   &kp COMMA  &kp PERIOD       &kp SLASH             &trans    &trans  &kp END       &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &trans        &kp K_NEXT
+&kp N6  &kp N7  &kp N8  &kp N9     &kp N0           &kp BACKSPACE                           &kp CAPSLOCK  &kp KP_NUMLOCK   &kp SLASH        &kp ASTERISK     &kp MINUS     &kp C_PLAY_PAUSE
+&kp Y   &kp U   &kp I   &kp O      &kp P            &kp NON_US_BACKSLASH                    &kp INSERT    &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp PLUS      &kp C_MUTE
+&kp H   &kp J   &kp K   &kp L      &kp SEMICOLON    &kp SQT                                 &kp HOME      &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_ENTER  &kp C_PREVIOUS
+&kp N   &kp N   &kp M   &kp COMMA  &kp PERIOD       &kp SLASH             &trans    &trans  &kp END       &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &trans        &kp C_NEXT
                         &kp ENTER  &kp RIGHT_SHIFT  &trans                &trans    &trans  &trans        &kp KP_NUMBER_0  &kp PERIOD
             >;
 
@@ -137,11 +165,11 @@
 
             display-name = "Right";
             bindings = <
-&kp GRAVE  &trans  &trans  &trans   &trans   &trans                     &trans         &trans    &trans    &trans  &trans     &kp DELETE
-&kp TILDE  &kp N1  &kp N2  &kp N3   &kp N4   &kp N5                     &kp N6         &kp N7    &kp N8    &kp N9  &kp N0     &trans
-&kp F1     &kp F2  &kp F3  &kp F4   &kp F5   &kp F6                     &kp PAGE_UP    &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans
-&kp F7     &kp F8  &kp F9  &kp F10  &kp F11  &kp F12  &trans    &trans  &kp PAGE_DOWN  &trans    &trans    &trans  &trans     &trans
-                           &trans   &trans   &trans   &trans    &trans  &trans         &trans    &trans
+&kp GRAVE  &trans  &trans  &trans   &trans   &trans                     &trans          &trans    &trans       &trans         &trans     &kp DELETE
+&kp TILDE  &kp N1  &kp N2  &kp N3   &kp N4   &kp N5                     &kp N6          &kp N7    &kp N8       &kp N9         &kp N0     &trans
+&kp F1     &kp F2  &kp F3  &kp F4   &kp F5   &kp F6                     &msc SCRL_UP    &kp LEFT  &kp DOWN     &kp UP         &kp RIGHT  &trans
+&kp F7     &kp F8  &kp F9  &kp F10  &kp F11  &kp F12  &trans    &trans  &msc SCRL_DOWN  &kp HOME  &kp PAGE_UP  &kp PAGE_DOWN  &kp END    &trans
+                           &trans   &trans   &trans   &trans    &trans  &trans          &trans    &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -150,11 +178,11 @@
         left_alt_layer {
             display-name = "LAlt";
             bindings = <
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                    &trans  &trans  &trans  &trans  &trans  &trans
-&kp TAB     &trans        &trans        &trans        &kp LA(F4)    &trans                          &trans  &trans  &trans  &trans  &trans  &trans
-&trans      &trans        &trans        &trans        &trans        &trans                          &trans  &trans  &trans  &trans  &trans  &trans
-&trans      &trans        &trans        &trans        &trans        &trans        &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                                        &trans        &trans        &trans        &trans    &trans  &trans  &trans  &trans
+&bt BT_CLR   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                    &trans  &trans  &trans  &trans  &trans  &trans
+&kp LG(TAB)  &trans        &trans        &trans        &kp LA(F4)    &trans                          &trans  &trans  &trans  &trans  &trans  &trans
+&kp F1       &kp F2        &kp F3        &kt F4        &kp F5        &kp F6                          &trans  &trans  &trans  &trans  &trans  &trans
+&kp F7       &kp F8        &kp F9        &kp F10       &kp F11       &kp F12       &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                                         &trans        &trans        &trans        &trans    &trans  &trans  &trans  &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -163,11 +191,11 @@
         right_alt_layer {
             display-name = "RAlt";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans             &trans          &trans        &trans           &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &msc SCRL_LEFT     &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &mmv MOVE_LEFT     &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &mkp LCLK          &mkp MCLK       &mkp RCLK     &mkp MB4         &mkp MB5
-                        &trans  &trans  &trans  &trans    &trans  &trans  &kp RIGHT_CONTROL  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans          &trans          &trans        &trans           &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &mkp LCLK       &mkp MCLK       &mkp RCLK     &mkp MB4         &mkp MB5
+                        &trans  &trans  &trans  &trans    &trans  &trans  &trans          &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
