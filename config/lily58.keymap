@@ -12,10 +12,7 @@
 #define ZMK_POINTING_DEFAULT_MOVE_VAL 1500  // default: 600
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 20    // default: 10
 
-&mmv {
-    acceleration-exponent = <0>;
-    time-to-max-speed-ms = <0>;
-};
+&mmv { time-to-max-speed-ms = <100>; };
 
 / {
     combos {
@@ -174,6 +171,61 @@
             bindings = <&kp LA(RIGHT_GUI)>;
             key-positions = <30 31 32>;
         };
+
+        UpperPCombo {
+            bindings = <&kp RC(P)>;
+            key-positions = <23 22>;
+            require-prior-idle-ms = <50>;
+            timeout-ms = <50>;
+            slow-release;
+        };
+
+        UpperOCombo {
+            bindings = <&kp RC(O)>;
+            key-positions = <22 21>;
+            slow-release;
+            require-prior-idle-ms = <50>;
+        };
+
+        UpperQCombo {
+            bindings = <&kp LS(Q)>;
+            key-positions = <12 13>;
+            require-prior-idle-ms = <50>;
+            timeout-ms = <50>;
+            slow-release;
+        };
+
+        UpperWCombo {
+            bindings = <&kp LS(W)>;
+            key-positions = <13 14>;
+            slow-release;
+            timeout-ms = <50>;
+            require-prior-idle-ms = <50>;
+        };
+
+        UpperECombo {
+            bindings = <&kp LS(E)>;
+            key-positions = <14 15>;
+            timeout-ms = <50>;
+            require-prior-idle-ms = <50>;
+            slow-release;
+        };
+
+        UpperRCombo {
+            bindings = <&kp LS(R)>;
+            key-positions = <15 16>;
+            timeout-ms = <50>;
+            require-prior-idle-ms = <50>;
+            slow-release;
+        };
+
+        UpperTCombo {
+            bindings = <&kp LS(T)>;
+            key-positions = <16 17>;
+            timeout-ms = <50>;
+            require-prior-idle-ms = <50>;
+            slow-release;
+        };
     };
 
     behaviors {
@@ -185,6 +237,42 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+
+        nine_left_braket: nine_left_braket {
+            compatible = "zmk,behavior-mod-morph";
+            label = "NINE_LEFT_BRAKET";
+            bindings = <&kp NUMBER_9>, <&kp LEFT_BRACKET>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LALT|MOD_RALT)>;
+        };
+
+        zero_right_braket: zero_right_braket {
+            compatible = "zmk,behavior-mod-morph";
+            label = "ZERO_RIGHT_BRAKET";
+            bindings = <&kp NUMBER_0>, <&kp RIGHT_BRACKET>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LALT|MOD_RALT)>;
+        };
+
+        seven_minus: seven_minus {
+            compatible = "zmk,behavior-mod-morph";
+            label = "SEVEN_MINUS";
+            bindings = <&kp NUMBER_7>, <&kp MINUS>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LALT|MOD_RALT)>;
+        };
+
+        eight_equal: eight_equal {
+            compatible = "zmk,behavior-mod-morph";
+            label = "EIGHT_EQUAL";
+            bindings = <&kp NUMBER_8>, <&kp EQUAL>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LALT|MOD_RALT)>;
+        };
     };
 
     keymap {
@@ -195,10 +283,10 @@
 
             display-name = "Base";
             bindings = <
-&esc_tilde          &kp N1  &kp N2  &kp N3        &kp N4          &kp N5                       &kp N6       &kp N7           &kp N8             &kp N9   &kp N0    &kp GRAVE
-&kp TAB             &kp Q   &kp W   &kp E         &kp R           &kp T                        &kp Y        &kp U            &kp I              &kp O    &kp P     &kp BACKSLASH
-&mt LCTRL CAPSLOCK  &kp A   &kp S   &kp D         &kp F           &kp G                        &kp H        &kp J            &kp K              &kp L    &kp SEMI  &kp SQT
-&kp LEFT_SHIFT      &kp Z   &kp X   &kp C         &kp V           &kp B        &none    &none  &kp N        &kp M            &kp COMMA          &kp DOT  &kp FSLH  &kp BACKSPACE
+&esc_tilde          &kp N1  &kp N2  &kp N3        &kp N4          &kp N5                       &kp N6       &seven_minus     &eight_equal       &nine_left_braket  &zero_right_braket  &kp GRAVE
+&kp TAB             &kp Q   &kp W   &kp E         &kp R           &kp T                        &kp Y        &kp U            &kp I              &kp O              &kp P               &kp BACKSLASH
+&mt LCTRL CAPSLOCK  &kp A   &kp S   &kp D         &kp F           &kp G                        &kp H        &kp J            &kp K              &kp L              &kp SEMI            &kp SQT
+&kp LEFT_SHIFT      &kp Z   &kp X   &kp C         &kp V           &kp B        &none    &none  &kp N        &kp M            &kp COMMA          &kp DOT            &kp FSLH            &kp BACKSPACE
                                     &kp LEFT_ALT  &lt 2 LEFT_GUI  &lt 1 SPACE  &none    &none  &lt 1 ENTER  &lt 2 RIGHT_ALT  &kp RIGHT_CONTROL
             >;
 
@@ -210,10 +298,10 @@
 
             display-name = "Space";
             bindings = <
-&trans  &trans  &trans   &trans            &trans      &trans                           &mkp MB4    &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &mkp MB5
-&trans  &kp F1  &kp F2   &kp F3            &kp F4      &trans                           &mkp LCLK   &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &mkp RCLK
-&trans  &kp F5  &kp F6   &kp F7            &kp F8      &trans                           &mkp MCLK   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans
-&trans  &kp F9  &kp F10  &kp F11           &kp F12     &kp RIGHT_ALT  &trans    &trans  &kp INSERT  &kp HOME        &kp PG_DN       &kp PG_UP     &kp END          &kp DELETE
+&trans  &trans  &trans   &trans            &trans      &trans                           &trans      &trans          &trans          &trans     &trans  &trans
+&trans  &kp F1  &kp F2   &kp F3            &kp F4      &trans                           &trans      &kp HOME        &kp UP          &kp PG_UP  &trans  &trans
+&trans  &kp F5  &kp F6   &kp F7            &kp F8      &trans                           &trans      &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT  &trans  &trans
+&trans  &kp F9  &kp F10  &kp F11           &kp F12     &kp RIGHT_ALT  &trans    &trans  &kp INSERT  &kp END         &trans          &kp PG_DN  &trans  &kp DELETE
                          &kp C_PLAY_PAUSE  &kp C_MUTE  &trans         &trans    &trans  &trans      &kp C_PREVIOUS  &kp C_NEXT
             >;
 
@@ -225,11 +313,11 @@
 
             display-name = "Enter";
             bindings = <
-&bt BT_CLR        &bt BT_SEL 0    &bt BT_SEL 1          &bt BT_SEL 2           &bt BT_SEL 3     &bt BT_SEL 4                         &kp KP_NUMLOCK   &trans           &trans           &trans                 &trans           &trans
-&kp MINUS         &kp N1          &kp N2                &kp N3                 &kp N4           &kp N5                               &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp MINUS              &kp EQUAL        &trans
-&kp EQUAL         &kp N6          &kp N7                &kp N8                 &kp N9           &kp N0                               &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp LEFT_PARENTHESIS   &kp LEFT_BRACE   &kp LEFT_BRACKET
-&kp LEFT_BRACKET  &kp LEFT_BRACE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &trans    &trans  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &kp RIGHT_BRACKET
-                                                        &trans                 &trans           &trans             &trans    &trans  &kp KP_NUMBER_0  &trans           &kp KP_DOT
+&bt BT_CLR         &bt BT_SEL 0     &bt BT_SEL 1           &bt BT_SEL 2     &bt BT_SEL 3     &bt BT_SEL 4                       &trans     &trans          &trans          &trans           &trans           &trans
+&trans             &kp MINUS        &kp EQUAL              &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9                    &trans     &mkp MB4        &mmv MOVE_UP    &mkp MB5         &trans           &trans
+&kp LEFT_BRACKET   &kp LEFT_BRACE   &kp LEFT_PARENTHESIS   &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6                    &mkp RCLK  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mkp LCLK        &trans
+&kp RIGHT_BRACKET  &kp RIGHT_BRACE  &kp RIGHT_PARENTHESIS  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &trans    &trans  &mkp MCLK  &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP     &msc SCRL_RIGHT  &trans
+                                                           &kp KP_NUMBER_0  &trans           &kp KP_DOT       &trans    &trans  &trans     &trans          &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
