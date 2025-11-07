@@ -187,8 +187,8 @@
             #binding-cells = <1>;
             acceleration-exponent = <0>;
             time-to-max-speed-ms = <0>;
-            x-input-code = <0>;
-            y-input-code = <1>;
+            x-input-code = <3>;
+            y-input-code = <4>;
         };
     };
 
