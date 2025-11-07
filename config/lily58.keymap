@@ -262,10 +262,10 @@
 
             display-name = "FN";
             bindings = <
-&trans  &trans     &trans     &trans            &trans             &trans                           &trans             &trans          &trans          &trans           &trans         &trans
-&trans  &kp N1     &kp N2     &kp N3            &kp N4             &kp N5                           &kp INSERT         &kp HOME        &kp UP_ARROW    &kp END          &kp PAGE_UP    &kp DELETE
-&trans  &kp N6     &kp N7     &kp N8            &kp N9             &kp N0                           &kp RIGHT_CONTROL  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp PAGE_DOWN  &trans
-&trans  &kp MINUS  &kp EQUAL  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BACKSLASH  &trans    &trans  &kp RIGHT_ALT      &kp PLUS        &kp MINUS       &kp ASTERISK     &kp SLASH      &trans
+&kp F1  &kp F2     &kp F3     &kp F4            &kp F5             &kp F6                           &kp F7             &kp F8          &kp F9          &kp F10       &kp F11          &kp F12
+&trans  &kp N1     &kp N2     &kp N3            &kp N4             &kp N5                           &kp N6             &kp N7          &kp N8          &kp N9        &kp N0           &kp DELETE
+&trans  &kp N6     &kp N7     &kp N8            &kp N9             &kp N0                           &kp RIGHT_CONTROL  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans
+&trans  &kp MINUS  &kp EQUAL  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BACKSLASH  &trans    &trans  &kp RIGHT_ALT      &kp HOME        &kp PG_DN       &kp PG_UP     &kp END          &trans
                               &trans            &trans             &trans         &trans    &trans  &trans             &trans          &trans
             >;
 
@@ -277,11 +277,11 @@
 
             display-name = "Gui";
             bindings = <
-&trans  &trans  &trans   &trans                        &trans   &trans                                     &trans    &trans          &trans          &trans           &trans          &trans
-&trans  &kp F1  &kp F2   &kp F3                        &kp F4   &trans                                     &trans    &msc SCRL_LEFT  &mmv MOVE_UP    &msc SCRL_RIGHT  &msc SCRL_UP    &kp DELETE
-&trans  &kp F5  &kp F6   &kp F7                        &kp F8   &trans                                     &trans    &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_DOWN  &trans
-&trans  &kp F9  &kp F10  &kp F11                       &kp F12  &mt C_MUTE C_PLAY_PAUSE  &trans    &trans  &trans    &mkp MB1        &mkp MB3        &mkp MB2         &trans          &trans
-                         &mt C_VOLUME_DOWN C_PREVIOUS  &trans   &mt C_VOLUME_UP C_NEXT   &trans    &trans  &mkp MB4  &trans          &mkp MB5
+&kp N6  &kp N7  &kp N8     &kp N9     &kp N0    &kp GRAVE                          &trans    &trans          &trans          &trans           &trans          &trans
+&kp Y   &kp U   &kp I      &kp O      &kp P     &kp BSPC                           &trans    &msc SCRL_LEFT  &mmv MOVE_UP    &msc SCRL_RIGHT  &msc SCRL_UP    &kp DELETE
+&kp H   &kp J   &kp K      &kp L      &kp SEMI  &kp SQT                            &trans    &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_DOWN  &trans
+&kp N   &kp M   &kp COMMA  &kp DOT    &kp FSLH  &kp RIGHT_SHIFT  &trans    &trans  &trans    &mkp MB1        &mkp MB3        &mkp MB2         &trans          &trans
+                           &kp ENTER  &trans    &kp RIGHT_ALT    &trans    &trans  &mkp MB4  &trans          &mkp MB5
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
