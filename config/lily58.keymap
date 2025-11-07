@@ -12,6 +12,11 @@
 #define ZMK_POINTING_DEFAULT_MOVE_VAL 1500  // default: 600
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 20    // default: 10
 
+&mmv {
+    acceleration-exponent = <0>;
+    time-to-max-speed-ms = <0>;
+};
+
 / {
     combos {
         compatible = "zmk,combos";
@@ -180,16 +185,6 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
-
-        mouse_movement: mouse_movement {
-            compatible = "zmk,behavior-input-two-axis";
-            label = "MOUSE_MOVEMENT";
-            #binding-cells = <1>;
-            acceleration-exponent = <0>;
-            time-to-max-speed-ms = <0>;
-            x-input-code = <3>;
-            y-input-code = <4>;
-        };
     };
 
     keymap {
@@ -217,7 +212,7 @@
             bindings = <
 &trans  &trans  &trans   &trans            &trans      &trans                           &mkp MB4    &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &mkp MB5
 &trans  &kp F1  &kp F2   &kp F3            &kp F4      &trans                           &mkp LCLK   &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &mkp RCLK
-&trans  &kp F5  &kp F6   &kp F7            &kp F8      &trans                           &mkp MCLK   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &mouse_movement MOVE_DOWN
+&trans  &kp F5  &kp F6   &kp F7            &kp F8      &trans                           &mkp MCLK   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans
 &trans  &kp F9  &kp F10  &kp F11           &kp F12     &kp RIGHT_ALT  &trans    &trans  &kp INSERT  &kp HOME        &kp PG_DN       &kp PG_UP     &kp END          &kp DELETE
                          &kp C_PLAY_PAUSE  &kp C_MUTE  &trans         &trans    &trans  &trans      &kp C_PREVIOUS  &kp C_NEXT
             >;
