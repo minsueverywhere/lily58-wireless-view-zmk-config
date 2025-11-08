@@ -301,11 +301,11 @@
 
             display-name = "Special";
             bindings = <
-&trans           &trans       &trans         &trans         &trans             &trans                            &trans     &trans             &trans            &trans             &trans                &trans
-&kp N1           &kp N2       &kp N3         &kp N4         &kp N5             &trans                            &trans     &kp N6             &kp N7            &kp N8             &kp N9                &kp N0
-&kp EXCLAMATION  &kp AT_SIGN  &kp HASH       &kp DOLLAR     &kp PERCENT        &kp MINUS                         &kp EQUAL  &kp CARET          &kp AMPERSAND     &kp ASTERISK       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
-&kp GRAVE        &kp TILDE    &kp BACKSLASH  &kp PIPE       &kp RIGHT_CONTROL  &kp UNDERSCORE  &trans    &trans  &kp PLUS   &kp RIGHT_CONTROL  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE        &kp RIGHT_BRACE
-                                             &kp RIGHT_ALT  &trans             &trans          &trans    &trans  &trans     &trans             &kp RIGHT_ALT
+&trans     &trans           &trans       &trans          &trans      &trans                               &trans             &trans          &trans           &trans                &trans                 &trans
+&trans     &kp MINUS        &kp EQUAL    &kp UNDERSCORE  &kp PLUS    &kp RIGHT_CONTROL                    &kp RIGHT_CONTROL  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans
+&kp TILDE  &kp EXCLAMATION  &kp AT_SIGN  &kp HASH        &kp DOLLAR  &kp PERCENT                          &kp CARET          &kp AMPERSAND   &kp ASTERISK     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PIPE
+&kp GRAVE  &kp N1           &kp N2       &kp N3          &kp N4      &kp N5             &trans    &trans  &kp N6             &kp N7          &kp N8           &kp N9                &kp N0                 &kp BACKSLASH
+                                         &kp RIGHT_ALT   &trans      &trans             &trans    &trans  &trans             &trans          &kp RIGHT_ALT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
