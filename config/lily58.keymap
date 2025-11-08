@@ -12,7 +12,7 @@
 #define ZMK_POINTING_DEFAULT_MOVE_VAL 1500  // default: 600
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 20    // default: 10
 
-&mmv { time-to-max-speed-ms = <50>; };
+&mmv { time-to-max-speed-ms = <100>; };
 
 / {
     combos {
@@ -174,7 +174,7 @@
 
         UpperPCombo {
             bindings = <&kp LS(P)>;
-            key-positions = <23 22>;
+            key-positions = <22 10>;
             require-prior-idle-ms = <50>;
             timeout-ms = <50>;
             slow-release;
@@ -182,14 +182,14 @@
 
         UpperOCombo {
             bindings = <&kp LS(O)>;
-            key-positions = <22 21>;
+            key-positions = <21 9>;
             slow-release;
             require-prior-idle-ms = <50>;
         };
 
         UpperQCombo {
             bindings = <&kp RS(Q)>;
-            key-positions = <12 13>;
+            key-positions = <13 1>;
             require-prior-idle-ms = <50>;
             timeout-ms = <50>;
             slow-release;
@@ -197,7 +197,7 @@
 
         UpperWCombo {
             bindings = <&kp RS(W)>;
-            key-positions = <13 14>;
+            key-positions = <14 2>;
             slow-release;
             timeout-ms = <50>;
             require-prior-idle-ms = <50>;
@@ -205,7 +205,7 @@
 
         UpperECombo {
             bindings = <&kp RS(E)>;
-            key-positions = <14 15>;
+            key-positions = <15 3>;
             timeout-ms = <50>;
             require-prior-idle-ms = <50>;
             slow-release;
@@ -213,7 +213,7 @@
 
         UpperRCombo {
             bindings = <&kp RS(R)>;
-            key-positions = <15 16>;
+            key-positions = <16 4>;
             timeout-ms = <50>;
             require-prior-idle-ms = <50>;
             slow-release;
@@ -221,7 +221,7 @@
 
         UpperTCombo {
             bindings = <&kp RS(T)>;
-            key-positions = <16 17>;
+            key-positions = <17 5>;
             timeout-ms = <50>;
             require-prior-idle-ms = <50>;
             slow-release;
@@ -229,7 +229,7 @@
 
         LRAltCombo {
             bindings = <&kp RIGHT_ALT>;
-            key-positions = <24 25>;
+            key-positions = <>;
             timeout-ms = <50>;
             require-prior-idle-ms = <50>;
             slow-release;
@@ -237,10 +237,18 @@
 
         RAltCombo {
             bindings = <&kp RIGHT_ALT>;
-            key-positions = <35 34>;
+            key-positions = <>;
             timeout-ms = <50>;
             require-prior-idle-ms = <50>;
             slow-release;
+        };
+
+        Mouse3Combo {
+            bindings = <&mkp MB3>;
+            key-positions = <49 48>;
+            timeout-ms = <50>;
+            require-prior-idle-ms = <50>;
+            layers = <1>;
         };
     };
 
@@ -263,8 +271,8 @@
 
             display-name = "Base";
             bindings = <
-&esc_tilde      &kp N1  &kp N2  &kp N3  &kp N4  &kp N5                       &kp N6       &kp N7  &kp N8     &kp N9   &kp N0    &kp GRAVE
-&kp TAB         &kp Q   &kp W   &kp E   &kp R   &kp T                        &kp Y        &kp U   &kp I      &kp O    &kp P     &kp BACKSPACE
+&esc_tilde      &kp N1  &kp N2  &kp N3  &kp N4  &kp N5                       &kp N6       &kp N7  &kp N8     &kp N9   &kp N0    &kp BACKSPACE
+&kp TAB         &kp Q   &kp W   &kp E   &kp R   &kp T                        &kp Y        &kp U   &kp I      &kp O    &kp P     &kp BACKSLASH
 &kp LCTRL       &kp A   &kp S   &kp D   &kp F   &kp G                        &kp H        &kp J   &kp K      &kp L    &kp SEMI  &kp SQT
 &kp LEFT_SHIFT  &kp Z   &kp X   &kp C   &kp V   &kp B        &none    &none  &kp N        &kp M   &kp COMMA  &kp DOT  &kp FSLH  &kp RSHIFT
                                 &mo 3   &mo 2   &lt 1 SPACE  &none    &none  &lt 1 ENTER  &mo 2   &mo 3
@@ -278,11 +286,11 @@
 
             display-name = "FN";
             bindings = <
-&trans  &trans  &trans  &trans                   &trans                 &trans                    &trans          &trans          &trans          &trans           &trans    &trans
-&kp F1  &kp F2  &kp F3  &kp F4                   &kp F5                 &kp F6                    &kp F7          &kp F8          &kp F9          &kp F10          &kp F11   &kp F12
-&trans  &trans  &trans  &trans                   &trans                 &trans                    &msc SCRL_UP    &msc SCRL_LEFT  &mmv MOVE_UP    &msc SCRL_RIGHT  &mkp MB4  &mkp MB5
-&trans  &trans  &trans  &trans                   &trans                 &trans  &trans    &trans  &msc SCRL_DOWN  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mkp MB1  &kp RIGHT_CONTROL
-                        &mt C_MUTE C_PLAY_PAUSE  &mt C_PREVIOUS C_NEXT  &trans  &trans    &trans  &trans          &mkp MB3        &mkp MB2
+&trans  &trans  &trans  &trans                   &trans                 &trans                    &trans          &trans          &trans          &trans           &trans           &kp DELETE
+&kp F1  &kp F2  &kp F3  &kp F4                   &kp F5                 &kp F6                    &kp F7          &kp F8          &kp F9          &kp F10          &kp F11          &kp F12
+&trans  &trans  &trans  &trans                   &trans                 &trans                    &msc SCRL_UP    &msc SCRL_LEFT  &mmv MOVE_UP    &msc SCRL_RIGHT  &kp LS(LC(TAB))  &kt LC(TAB)
+&trans  &trans  &trans  &trans                   &trans                 &trans  &trans    &trans  &msc SCRL_DOWN  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mkp MB1         &mkp MB2
+                        &mt C_MUTE C_PLAY_PAUSE  &mt C_PREVIOUS C_NEXT  &trans  &trans    &trans  &trans          &mkp MB4        &mkp MB5
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -293,11 +301,11 @@
 
             display-name = "Gui";
             bindings = <
-&trans     &trans           &trans       &trans    &trans      &trans                         &trans     &trans         &trans        &trans                &trans                 &trans
-&kp TILDE  &kp EXCLAMATION  &kp AT_SIGN  &kp HASH  &kp DOLLAR  &kp PERCENT                    &kp CARET  &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
-&kp GRAVE  &kp N1           &kp N2       &kp N3    &kp N4      &kp N5                         &kp N6     &kp N7         &kp N8        &kp N9                &kp N0                 &kp PIPE
-&trans     &trans           &trans       &trans    &trans      &trans       &trans    &trans  &trans     &kp MINUS      &kp EQUAL     &kp LBKT              &kp RBKT               &kp BSLH
-                                         &trans    &trans      &trans       &trans    &trans  &trans     &trans         &trans
+&trans             &trans           &trans       &trans          &trans      &trans                           &trans         &trans            &trans             &trans                &trans                 &trans
+&kp TILDE          &kp EXCLAMATION  &kp AT_SIGN  &kp HASH        &kp DOLLAR  &kp PERCENT                      &kp CARET      &kp AMPERSAND     &kp ASTERISK       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PIPE
+&kp GRAVE          &kp N1           &kp N2       &kp N3          &kp N4      &kp N5                           &kp N6         &kp N7            &kp N8             &kp N9                &kp N0                 &kp BACKSLASH
+&kp RIGHT_CONTROL  &kp MINUS        &kp EQUAL    &kp UNDERSCORE  &kp PLUS    &kp RIGHT_ALT  &trans    &trans  &kp RIGHT_ALT  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp RIGHT_CONTROL
+                                                 &trans          &trans      &trans         &trans    &trans  &trans         &trans            &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -306,11 +314,11 @@
         alt_layer {
             display-name = "Alt";
             bindings = <
-&bt BT_CLR    &kp KP_NUMLOCK  &kp KP_PLUS  &kp KP_MINUS     &kp KP_MULTIPLY  &kp KP_SLASH                       &trans                &trans            &trans         &trans          &trans        &trans
-&bt BT_SEL 0  &trans          &trans       &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9                    &trans                &trans            &kp INSERT     &kp SCROLLLOCK  &kp CAPSLOCK  &kp DELETE
-&bt BT_SEL 1  &trans          &trans       &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6                    &trans                &trans            &kp PAGE_UP    &kp HOME        &kp UP        &kp END
-&bt BT_SEL 2  &trans          &trans       &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &trans    &trans  &trans                &trans            &kp PAGE_DOWN  &kp LEFT        &kp DOWN      &kp RIGHT
-                                           &trans           &kp KP_NUMBER_0  &kp KP_DOT       &trans    &trans  &kp LS(LEFT_CONTROL)  &kp LEFT_CONTROL  &trans
+&bt BT_CLR    &kp KP_NUMLOCK  &kp KP_PLUS  &kp KP_MINUS     &kp KP_MULTIPLY  &kp KP_SLASH                       &kp PRINTSCREEN  &kp SCROLLLOCK   &kp PAUSE_BREAK  &kp INSERT  &kp HOME  &kp PG_UP
+&bt BT_SEL 0  &trans          &trans       &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9                    &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp DEL     &kp END   &kp PG_DN
+&bt BT_SEL 1  &trans          &trans       &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6                    &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &trans      &kp UP    &trans
+&bt BT_SEL 2  &trans          &trans       &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &trans    &trans  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp LEFT    &kp DOWN  &kp RIGHT
+                                           &trans           &kp KP_NUMBER_0  &kp KP_DOT       &trans    &trans  &kp KP_DOT       &kp KP_NUMBER_0  &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -319,10 +327,10 @@
         lefthanded_layer {
             display-name = "Gui";
             bindings = <
-&kp N6  &kp N7  &kp N8     &kp N9     &kp N0    &kp GRAVE                          &trans  &trans  &trans  &trans                &trans                 &trans
-&kp Y   &kp U   &kp I      &kp O      &kp P     &kp BSPC                           &trans  &trans  &trans  &kp MINUS             &kp EQUAL              &trans
-&kp H   &kp J   &kp K      &kp L      &kp SEMI  &kp SQT                            &trans  &trans  &trans  &kp LBKT              &kp RBKT               &kp BSLH
-&kp N   &kp M   &kp COMMA  &kp DOT    &kp FSLH  &kp RIGHT_SHIFT  &trans    &trans  &trans  &trans  &trans  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp RIGHT_SHIFT
+&kp N6  &kp N7  &kp N8     &kp N9     &kp N0    &kp GRAVE                          &trans  &trans  &trans  &trans  &trans  &trans
+&kp Y   &kp U   &kp I      &kp O      &kp P     &kp BSPC                           &trans  &trans  &trans  &trans  &trans  &trans
+&kp H   &kp J   &kp K      &kp L      &kp SEMI  &kp SQT                            &trans  &trans  &trans  &trans  &trans  &trans
+&kp N   &kp M   &kp COMMA  &kp DOT    &kp FSLH  &kp RIGHT_SHIFT  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
                            &kp ENTER  &trans    &kp RIGHT_ALT    &trans    &trans  &trans  &trans  &trans
             >;
 
