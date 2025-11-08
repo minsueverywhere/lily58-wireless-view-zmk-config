@@ -118,7 +118,7 @@
             bindings = <&kp LEFT_GUI>;
             key-positions = <29 37>;
             slow-release;
-            require-prior-idle-ms = <50>;
+            require-prior-idle-ms = <200>;
             timeout-ms = <100>;
         };
 
@@ -126,7 +126,7 @@
             bindings = <&kp RIGHT_GUI>;
             key-positions = <30 48>;
             slow-release;
-            require-prior-idle-ms = <50>;
+            require-prior-idle-ms = <200>;
             timeout-ms = <100>;
         };
 
