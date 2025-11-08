@@ -271,8 +271,8 @@
 
             display-name = "Base";
             bindings = <
-&esc_tilde      &kp N1  &kp N2  &kp N3  &kp N4  &kp N5                       &kp N6       &kp N7  &kp N8     &kp N9   &kp N0    &kp BACKSPACE
-&kp TAB         &kp Q   &kp W   &kp E   &kp R   &kp T                        &kp Y        &kp U   &kp I      &kp O    &kp P     &kp BACKSLASH
+&esc_tilde      &kp N1  &kp N2  &kp N3  &kp N4  &kp N5                       &kp N6       &kp N7  &kp N8     &kp N9   &kp N0    &kp CAPSLOCK
+&kp TAB         &kp Q   &kp W   &kp E   &kp R   &kp T                        &kp Y        &kp U   &kp I      &kp O    &kp P     &kp BACKSPACE
 &kp LCTRL       &kp A   &kp S   &kp D   &kp F   &kp G                        &kp H        &kp J   &kp K      &kp L    &kp SEMI  &kp SQT
 &kp LEFT_SHIFT  &kp Z   &kp X   &kp C   &kp V   &kp B        &none    &none  &kp N        &kp M   &kp COMMA  &kp DOT  &kp FSLH  &kp RSHIFT
                                 &mo 3   &mo 2   &lt 1 SPACE  &none    &none  &lt 1 ENTER  &mo 2   &mo 3
@@ -314,10 +314,10 @@
         alt_layer {
             display-name = "Alt";
             bindings = <
-&bt BT_CLR    &kp KP_NUMLOCK  &kp KP_PLUS  &kp KP_MINUS     &kp KP_MULTIPLY  &kp KP_SLASH                       &kp PRINTSCREEN  &kp SCROLLLOCK   &kp PAUSE_BREAK  &kp INSERT  &kp HOME  &kp PG_UP
-&bt BT_SEL 0  &trans          &trans       &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9                    &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp DEL     &kp END   &kp PG_DN
-&bt BT_SEL 1  &trans          &trans       &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6                    &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp SPACE   &kp UP    &kp TAB
-&bt BT_SEL 2  &trans          &trans       &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &trans    &trans  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp LEFT    &kp DOWN  &kp RIGHT
+&bt BT_CLR    &kp KP_NUMLOCK  &kp KP_PLUS  &kp KP_MINUS     &kp KP_MULTIPLY  &kp KP_SLASH                       &kp PRINTSCREEN  &kp SCROLLLOCK   &kp PAUSE_BREAK  &kp PAGE_UP    &kp HOME  &kp INSERT
+&bt BT_SEL 0  &trans          &trans       &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9                    &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp PAGE_DOWN  &kp END   &kp DELETE
+&bt BT_SEL 1  &trans          &trans       &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6                    &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp SPACE      &kp UP    &kp TAB
+&bt BT_SEL 2  &trans          &trans       &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &trans    &trans  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp LEFT       &kp DOWN  &kp RIGHT
                                            &trans           &kp KP_NUMBER_0  &kp KP_DOT       &trans    &trans  &kp KP_DOT       &kp KP_NUMBER_0  &trans
             >;
 
