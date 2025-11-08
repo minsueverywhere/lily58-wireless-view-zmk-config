@@ -22,7 +22,7 @@
             bindings = <&kp LEFT_SHIFT>;
             key-positions = <25 26>;
             slow-release;
-            require-prior-idle-ms = <50>;
+            require-prior-idle-ms = <100>;
             timeout-ms = <50>;
         };
 
@@ -67,7 +67,7 @@
             bindings = <&kp RSHIFT>;
             key-positions = <34 33>;
             slow-release;
-            require-prior-idle-ms = <50>;
+            require-prior-idle-ms = <100>;
             timeout-ms = <50>;
         };
 
@@ -288,7 +288,7 @@
             bindings = <
 &trans  &trans  &trans  &trans                   &trans                 &trans                     &trans          &trans          &trans          &trans           &trans           &trans
 &trans  &trans  &trans  &trans                   &trans                 &trans                     &trans          &trans          &trans          &trans           &trans           &kp BACKSPACE
-&kp F1  &kp F2  &kp F3  &kp F4                   &kp F5                 &kp F6                     &msc SCRL_UP    &msc SCRL_LEFT  &mmv MOVE_UP    &msc SCRL_RIGHT  &kp LS(LC(TAB))  &kt LC(TAB)
+&kp F1  &kp F2  &kp F3  &kp F4                   &kp F5                 &kp F6                     &msc SCRL_UP    &msc SCRL_LEFT  &mmv MOVE_UP    &msc SCRL_RIGHT  &kp LS(LC(TAB))  &kp LC(TAB)
 &kp F7  &kp F8  &kp F9  &kp F10                  &kp F11                &kp F12  &trans    &trans  &msc SCRL_DOWN  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mkp MB1         &mkp MB2
                         &mt C_MUTE C_PLAY_PAUSE  &mt C_PREVIOUS C_NEXT  &trans   &trans    &trans  &trans          &mkp MB4        &mkp MB5
             >;
@@ -302,8 +302,8 @@
             display-name = "Gui";
             bindings = <
 &trans     &trans           &trans       &trans          &trans      &trans                               &trans             &trans            &trans             &trans                &trans                 &trans
-&trans     &kp EXCLAMATION  &kp AT_SIGN  &kp HASH        &kp DOLLAR  &kp PERCENT                          &kp CARET          &kp AMPERSAND     &kp ASTERISK       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
-&kp TILDE  &kp N1           &kp N2       &kp N3          &kp N4      &kp N5                               &kp N6             &kp N7            &kp N8             &kp N9                &kp N0                 &kp PIPE
+&trans     &kp N1           &kp N2       &kp N3          &kp N4      &kp N5                               &kp N6             &kp N7            &kp N8             &kp N9                &kp N0                 &trans
+&kp TILDE  &kp EXCLAMATION  &kp AT_SIGN  &kp HASH        &kp DOLLAR  &kp PERCENT                          &kp CARET          &kp AMPERSAND     &kp ASTERISK       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PIPE
 &kp GRAVE  &kp MINUS        &kp EQUAL    &kp UNDERSCORE  &kp PLUS    &kp RIGHT_CONTROL  &trans    &trans  &kp RIGHT_CONTROL  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp BACKSLASH
                                          &kp RIGHT_ALT   &trans      &trans             &trans    &trans  &trans             &trans            &kp RIGHT_ALT
             >;
