@@ -20,161 +20,183 @@
 
         LShiftCombo {
             bindings = <&kp LEFT_SHIFT>;
-            key-positions = <25 26>;
+            key-positions = <26 37>;
             slow-release;
-            require-prior-idle-ms = <100>;
-            timeout-ms = <50>;
+            require-prior-idle-ms = <50>;
+            timeout-ms = <100>;
         };
 
         LControlCombo {
             bindings = <&kp LCTRL>;
-            key-positions = <26 27>;
+            key-positions = <27 37>;
             slow-release;
             require-prior-idle-ms = <50>;
-            timeout-ms = <50>;
+            timeout-ms = <100>;
         };
 
         LAltCombo {
             bindings = <&kp LEFT_ALT>;
-            key-positions = <27 28>;
+            key-positions = <28 37>;
             slow-release;
             require-prior-idle-ms = <50>;
-            timeout-ms = <50>;
+            timeout-ms = <100>;
         };
 
         LCtrlLShiftCombo {
             bindings = <&kp LC(LEFT_SHIFT)>;
-            key-positions = <25 26 27>;
+            key-positions = <26 27 37>;
             slow-release;
             require-prior-idle-ms = <50>;
+            timeout-ms = <100>;
         };
 
         LCtrlLAltCombo {
             bindings = <&kp LC(LEFT_ALT)>;
-            key-positions = <26 27 28>;
+            key-positions = <27 28 37>;
             slow-release;
             require-prior-idle-ms = <50>;
+            timeout-ms = <100>;
         };
 
         LCtrlLShiftLAltCombo {
             bindings = <&kp LC(LA(LEFT_SHIFT))>;
-            key-positions = <25 26 27 28>;
+            key-positions = <26 27 28 37>;
             slow-release;
             require-prior-idle-ms = <50>;
+            timeout-ms = <100>;
         };
 
         RShiftCombo {
             bindings = <&kp RSHIFT>;
-            key-positions = <34 33>;
+            key-positions = <33 48>;
             slow-release;
-            require-prior-idle-ms = <100>;
-            timeout-ms = <50>;
+            require-prior-idle-ms = <50>;
+            timeout-ms = <100>;
         };
 
         RCtrlCombo {
             bindings = <&kp LEFT_CONTROL>;
-            key-positions = <33 32>;
+            key-positions = <32 48>;
             slow-release;
             require-prior-idle-ms = <50>;
-            timeout-ms = <50>;
+            timeout-ms = <100>;
         };
 
         RLAltCombo {
             bindings = <&kp LEFT_ALT>;
-            key-positions = <31 32>;
+            key-positions = <31 48>;
             slow-release;
             require-prior-idle-ms = <50>;
-            timeout-ms = <50>;
+            timeout-ms = <100>;
         };
 
         RCtrlRShiftCombo {
             bindings = <&kp LC(RIGHT_SHIFT)>;
-            key-positions = <34 33 32>;
+            key-positions = <33 32 48>;
             slow-release;
             require-prior-idle-ms = <50>;
+            timeout-ms = <100>;
         };
 
         RCtrlRAltCombo {
             bindings = <&kp LC(LEFT_ALT)>;
-            key-positions = <32 31 33>;
+            key-positions = <32 31 48>;
             slow-release;
             require-prior-idle-ms = <50>;
+            timeout-ms = <100>;
         };
 
         RCtrlRShiftRAltCombo {
             bindings = <&kp LC(LA(RIGHT_SHIFT))>;
-            key-positions = <31 32 33 34>;
+            key-positions = <31 32 33 48>;
             slow-release;
             require-prior-idle-ms = <50>;
+            timeout-ms = <100>;
         };
 
         LGuiCombo {
             bindings = <&kp LEFT_GUI>;
-            key-positions = <28 29>;
+            key-positions = <29 37>;
             slow-release;
             require-prior-idle-ms = <50>;
-            timeout-ms = <50>;
+            timeout-ms = <100>;
         };
 
         RGuiCombo {
             bindings = <&kp RIGHT_GUI>;
-            key-positions = <31 30>;
+            key-positions = <30 48>;
             slow-release;
             require-prior-idle-ms = <50>;
-            timeout-ms = <50>;
+            timeout-ms = <100>;
         };
 
         LShiftLAltCombo {
             bindings = <&kp LA(LEFT_SHIFT)>;
-            key-positions = <25 26 28>;
+            key-positions = <26 28 37>;
             slow-release;
             require-prior-idle-ms = <50>;
+            timeout-ms = <100>;
         };
 
         RShiftLAltCombo {
             bindings = <&kp LA(RIGHT_SHIFT)>;
-            key-positions = <34 33 31>;
+            key-positions = <33 31 48>;
+            slow-release;
+            timeout-ms = <100>;
+            require-prior-idle-ms = <50>;
         };
 
         LShiftLGuiCombo {
             bindings = <&kp LS(LEFT_GUI)>;
-            key-positions = <29 28 25>;
+            key-positions = <29 37 26>;
             require-prior-idle-ms = <50>;
             slow-release;
+            timeout-ms = <100>;
         };
 
         LCtrlLGuiCombo {
             bindings = <&kp LC(LEFT_GUI)>;
-            key-positions = <29 28 26>;
+            key-positions = <29 37 27>;
             require-prior-idle-ms = <50>;
             slow-release;
+            timeout-ms = <100>;
         };
 
         LAltLGuiCombo {
             bindings = <&kp LA(LEFT_GUI)>;
-            key-positions = <29 28 27>;
+            key-positions = <29 28 37>;
             require-prior-idle-ms = <50>;
             slow-release;
+            timeout-ms = <100>;
         };
 
         RShiftRGuiCombo {
             bindings = <&kp LS(RIGHT_GUI)>;
-            key-positions = <30 31 34>;
+            key-positions = <30 48 33>;
+            slow-release;
+            timeout-ms = <100>;
+            require-prior-idle-ms = <50>;
         };
 
         LCtrlRGuiCombo {
             bindings = <&kp LC(RIGHT_GUI)>;
-            key-positions = <30 31 33>;
+            key-positions = <30 48 32>;
+            slow-release;
+            timeout-ms = <100>;
+            require-prior-idle-ms = <50>;
         };
 
         LAltRGuiCombo {
             bindings = <&kp LA(RIGHT_GUI)>;
-            key-positions = <30 31 32>;
+            key-positions = <30 31 48>;
+            slow-release;
+            timeout-ms = <100>;
+            require-prior-idle-ms = <50>;
         };
 
         UpperPCombo {
             bindings = <&kp LS(P)>;
-            key-positions = <22 10>;
+            key-positions = <>;
             require-prior-idle-ms = <50>;
             timeout-ms = <50>;
             slow-release;
@@ -182,14 +204,14 @@
 
         UpperOCombo {
             bindings = <&kp LS(O)>;
-            key-positions = <21 9>;
+            key-positions = <>;
             slow-release;
             require-prior-idle-ms = <50>;
         };
 
         UpperQCombo {
             bindings = <&kp RS(Q)>;
-            key-positions = <13 1>;
+            key-positions = <>;
             require-prior-idle-ms = <50>;
             timeout-ms = <50>;
             slow-release;
@@ -197,7 +219,7 @@
 
         UpperWCombo {
             bindings = <&kp RS(W)>;
-            key-positions = <14 2>;
+            key-positions = <>;
             slow-release;
             timeout-ms = <50>;
             require-prior-idle-ms = <50>;
@@ -205,7 +227,7 @@
 
         UpperECombo {
             bindings = <&kp RS(E)>;
-            key-positions = <15 3>;
+            key-positions = <>;
             timeout-ms = <50>;
             require-prior-idle-ms = <50>;
             slow-release;
@@ -213,7 +235,7 @@
 
         UpperRCombo {
             bindings = <&kp RS(R)>;
-            key-positions = <16 4>;
+            key-positions = <>;
             timeout-ms = <50>;
             require-prior-idle-ms = <50>;
             slow-release;
@@ -221,7 +243,7 @@
 
         UpperTCombo {
             bindings = <&kp RS(T)>;
-            key-positions = <17 5>;
+            key-positions = <>;
             timeout-ms = <50>;
             require-prior-idle-ms = <50>;
             slow-release;
@@ -229,7 +251,7 @@
 
         LRAltCombo {
             bindings = <&kp RIGHT_ALT>;
-            key-positions = <51 50>;
+            key-positions = <50 51>;
             timeout-ms = <50>;
             require-prior-idle-ms = <50>;
             slow-release;
@@ -263,7 +285,7 @@
 
             display-name = "Base";
             bindings = <
-&esc_tilde      &kp N1  &kp N2  &kp N3  &kp N4  &kp N5                       &kp N6       &kp N7  &kp N8     &kp N9   &kp N0    &mt CAPSLOCK RIGHT_ALT
+&esc_tilde      &kp N1  &kp N2  &kp N3  &kp N4  &kp N5                       &kp N6       &kp N7  &kp N8     &kp N9   &kp N0    &kp CAPSLOCK
 &kp TAB         &kp Q   &kp W   &kp E   &kp R   &kp T                        &kp Y        &kp U   &kp I      &kp O    &kp P     &kp BACKSPACE
 &kp LCTRL       &kp A   &kp S   &kp D   &kp F   &kp G                        &kp H        &kp J   &kp K      &kp L    &kp SEMI  &kp SQT
 &kp LEFT_SHIFT  &kp Z   &kp X   &kp C   &kp V   &kp B        &none    &none  &kp N        &kp M   &kp COMMA  &kp DOT  &kp FSLH  &kp RSHIFT
@@ -279,8 +301,8 @@
             display-name = "FN";
             bindings = <
 &trans  &trans  &trans  &trans                   &trans                 &trans                     &trans          &trans          &trans          &trans           &trans    &trans
-&trans  &trans  &trans  &trans                   &trans                 &trans                     &trans          &trans          &trans          &trans           &trans    &kp BACKSPACE
-&kp F1  &kp F2  &kp F3  &kp F4                   &kp F5                 &kp F6                     &msc SCRL_UP    &msc SCRL_LEFT  &mmv MOVE_UP    &msc SCRL_RIGHT  &mkp MB3  &kp LG(TAB)
+&trans  &trans  &trans  &trans                   &trans                 &trans                     &trans          &trans          &trans          &trans           &trans    &trans
+&kp F1  &kp F2  &kp F3  &kp F4                   &kp F5                 &kp F6                     &msc SCRL_UP    &msc SCRL_LEFT  &mmv MOVE_UP    &msc SCRL_RIGHT  &mkp MB3  &trans
 &kp F7  &kp F8  &kp F9  &kp F10                  &kp F11                &kp F12  &trans    &trans  &msc SCRL_DOWN  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mkp MB1  &mkp MB2
                         &mt C_MUTE C_PLAY_PAUSE  &mt C_PREVIOUS C_NEXT  &trans   &trans    &trans  &trans          &mkp MB4        &mkp MB5
             >;
@@ -319,7 +341,7 @@
         lefthanded_layer {
             display-name = "Gui";
             bindings = <
-&kp N6  &kp N7  &kp N8     &kp N9     &kp N0    &kp GRAVE                          &trans  &trans  &trans  &trans  &trans  &trans
+&kp N6  &kp N7  &kp N8     &kp N9     &kp N0    &kp CAPSLOCK                       &trans  &trans  &trans  &trans  &trans  &trans
 &kp Y   &kp U   &kp I      &kp O      &kp P     &kp BSPC                           &trans  &trans  &trans  &trans  &trans  &trans
 &kp H   &kp J   &kp K      &kp L      &kp SEMI  &kp SQT                            &trans  &trans  &trans  &trans  &trans  &trans
 &kp N   &kp M   &kp COMMA  &kp DOT    &kp FSLH  &kp RIGHT_SHIFT  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
