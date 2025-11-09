@@ -108,6 +108,86 @@
             bindings = <&kp BACKSLASH>;
             key-positions = <55 47>;
         };
+
+        cb_s1 {
+            bindings = <&kp EXCLAMATION>;
+            key-positions = <52 25 24>;
+        };
+
+        cb_s2 {
+            bindings = <&kp AT_SIGN>;
+            key-positions = <52 26 24>;
+        };
+
+        cb_s3 {
+            bindings = <&kp HASH>;
+            key-positions = <52 27 24>;
+        };
+
+        cb_s4 {
+            bindings = <&kp DOLLAR>;
+            key-positions = <52 28 24>;
+        };
+
+        cb_s5 {
+            bindings = <&kp PERCENT>;
+            key-positions = <52 29 24>;
+        };
+
+        cb_s6 {
+            bindings = <&kp CARET>;
+            key-positions = <55 30 35>;
+        };
+
+        cb_s7 {
+            bindings = <&kp AMPERSAND>;
+            key-positions = <55 31 35>;
+        };
+
+        cb_s8 {
+            bindings = <&kp ASTERISK>;
+            key-positions = <55 32 35>;
+        };
+
+        cb_s9 {
+            bindings = <&kp LEFT_PARENTHESIS>;
+            key-positions = <55 33 35>;
+        };
+
+        cb_s0 {
+            bindings = <&kp RIGHT_PARENTHESIS>;
+            key-positions = <55 34 35>;
+        };
+
+        cb_tilde {
+            bindings = <&kp TILDE>;
+            key-positions = <52 38 24>;
+        };
+
+        cb__ {
+            bindings = <&kp UNDERSCORE>;
+            key-positions = <52 39 24>;
+        };
+
+        cb_+ {
+            bindings = <&kp PLUS>;
+            key-positions = <52 40 24>;
+        };
+
+        cb_lbc {
+            bindings = <&kp LEFT_BRACE>;
+            key-positions = <55 45 35>;
+        };
+
+        cb_rbc {
+            bindings = <&kp RIGHT_BRACE>;
+            key-positions = <55 46 35>;
+        };
+
+        cb_pipe {
+            bindings = <&kp PIPE>;
+            key-positions = <55 47 35>;
+        };
     };
 
     keymap {
