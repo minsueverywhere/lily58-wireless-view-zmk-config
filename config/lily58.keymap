@@ -220,6 +220,13 @@
             key-positions = <55 47 35>;
             timeout-ms = <100>;
         };
+
+        cb_lgui {
+            bindings = <&kp LEFT_GUI>;
+            key-positions = <50 51>;
+            slow-release;
+            timeout-ms = <100>;
+        };
     };
 
     keymap {
