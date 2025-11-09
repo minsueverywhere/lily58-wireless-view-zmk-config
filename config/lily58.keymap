@@ -17,11 +17,7 @@
     acceleration-exponent = <1>;
 };
 
-&lt {
-    flavor = "tap-preferred";
-    hold-trigger-key-positions = <51 24 25 26 27 28 29 36 37 38 39 40 41 13 14 15 16 30 31 32 33 34 35 44 45 46 47 48 49 22 21 20 19 56>;
-    retro-tap;
-};
+&lt { flavor = "balanced"; };
 
 / {
     combos {
@@ -203,21 +199,6 @@
             require-prior-idle-ms = <50>;
         };
 
-        LGuiCombo2 {
-            bindings = <&kp LEFT_GUI>;
-            key-positions = <51 50>;
-            timeout-ms = <100>;
-            require-prior-idle-ms = <50>;
-            slow-release;
-        };
-
-        RAltCombo {
-            bindings = <&kp RIGHT_CONTROL>;
-            key-positions = <57 56>;
-            timeout-ms = <100>;
-            require-prior-idle-ms = <50>;
-        };
-
         M3Combo {
             bindings = <&mkp MB3>;
             key-positions = <5 6>;
@@ -233,26 +214,11 @@
 
             display-name = "Base";
             bindings = <
-&kp ESCAPE        &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &mkp MB2                     &mkp MB1     &kp LEFT  &kp DOWN         &kp UP   &kp RIGHT  &kp DELETE
-&kp TAB           &kp Q           &kp W           &kp E         &kp R            &kp T                        &kp Y        &kp U     &kp I            &kp O    &kp P      &kp BACKSPACE
-&kp LEFT_SHIFT    &kp A           &kp S           &kp D         &kp F            &kp G                        &kp H        &kp J     &kp K            &kp L    &kp SEMI   &kp RIGHT_SHIFT
-&kp LEFT_CONTROL  &kp Z           &kp X           &kp C         &kp V            &kp B        &none    &none  &kp N        &kp M     &kp COMMA        &kp DOT  &kp FSLH   &kp SQT
-                                                  &kp LEFT_ALT  &lt 2 LEFT_GUI   &lt 1 SPACE  &none    &none  &lt 1 ENTER  &mo 2     &lt 3 RIGHT_ALT
-            >;
-
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
-        };
-
-        fn_layer {
-            // ------------------------------------------------------------------------------------------------------------
-
-            display-name = "FN";
-            bindings = <
-&mkp MB4       &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP             &msc SCRL_RIGHT        &mkp MB5                    &kp LS(LC(TAB))  &kp HOME  &kp PAGE_UP  &kp PAGE_DOWN  &kp END  &kp LC(TAB)
-&bt BT_NXT     &kp F1          &kp F2          &kp F3                   &kp F4                 &trans                      &trans           &trans    &trans       &trans         &trans   &trans
-&bt BT_PRV     &kp F5          &kp F6          &kp F7                   &kp F8                 &trans                      &trans           &trans    &trans       &trans         &trans   &trans
-&bt BT_DISC 2  &kp F9          &kp F10         &kp F11                  &kp F12                &trans    &trans    &trans  &trans           &trans    &trans       &trans         &trans   &trans
-                                               &mt C_MUTE C_PLAY_PAUSE  &mt C_PREVIOUS C_NEXT  &trans    &trans    &trans  &trans           &trans    &trans
+&kp ESCAPE        &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &mkp MB2                     &mkp MB1     &kp LEFT         &kp DOWN             &kp UP   &kp RIGHT  &kp DELETE
+&kp TAB           &kp Q           &kp W           &kp E         &kp R            &kp T                        &kp Y        &kp U            &kp I                &kp O    &kp P      &kp BACKSPACE
+&kp LEFT_SHIFT    &kp A           &kp S           &kp D         &kp F            &kp G                        &kp H        &kp J            &kp K                &kp L    &kp SEMI   &kp RIGHT_SHIFT
+&kp LEFT_CONTROL  &kp Z           &kp X           &kp C         &kp V            &kp B        &none    &none  &kp N        &kp M            &kp COMMA            &kp DOT  &kp FSLH   &kp SQT
+                                                  &kp LEFT_ALT  &lt 2 LEFT_GUI   &lt 1 SPACE  &none    &none  &lt 1 ENTER  &lt 2 RIGHT_ALT  &lt 3 RIGHT_CONTROL
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -263,11 +229,26 @@
 
             display-name = "Special";
             bindings = <
-&trans     &trans           &trans          &trans        &trans      &trans                         &trans     &trans          &trans             &trans                &trans                 &trans
-&trans     &kp MINUS        &kp UNDERSCORE  &kp EQUAL     &kp PLUS    &trans                         &trans     &kp LEFT_BRACE  &kp RIGHT_BRACE    &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans
-&kp TILDE  &kp EXCLAMATION  &kp AT_SIGN     &kp HASH      &kp DOLLAR  &kp PERCENT                    &kp CARET  &kp AMPERSAND   &kp ASTERISK       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PIPE
-&kp GRAVE  &kp N1           &kp N2          &kp N3        &kp N4      &kp N5       &trans    &trans  &kp N6     &kp N7          &kp N8             &kp N9                &kp N0                 &kp BACKSLASH
-                                            &kp LEFT_GUI  &trans      &trans       &trans    &trans  &trans     &trans          &kp RIGHT_CONTROL
+&mkp MB4   &msc SCRL_LEFT   &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &mkp MB5                       &kp LS(LC(TAB))  &kp HOME        &kp PG_UP        &kp PG_DN             &kp END                &kp LC(TAB)
+&trans     &kp MINUS        &kp UNDERSCORE  &kp EQUAL     &kp PLUS         &trans                         &trans           &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans
+&kp TILDE  &kp EXCLAMATION  &kp AT_SIGN     &kp HASH      &kp DOLLAR       &kp PERCENT                    &kp CARET        &kp AMPERSAND   &kp ASTERISK     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PIPE
+&kp GRAVE  &kp N1           &kp N2          &kp N3        &kp N4           &kp N5       &trans    &trans  &kp N6           &kp N7          &kp N8           &kp N9                &kp N0                 &kp BACKSLASH
+                                            &trans        &trans           &trans       &trans    &trans  &trans           &trans          &trans
+            >;
+
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+        };
+
+        fn_layer {
+            // ------------------------------------------------------------------------------------------------------------
+
+            display-name = "FN";
+            bindings = <
+&trans         &trans  &trans   &trans                   &trans   &trans                                   &trans  &trans  &trans  &trans  &trans  &trans
+&bt BT_NXT     &kp F1  &kp F2   &kp F3                   &kp F4   &trans                                   &trans  &trans  &trans  &trans  &trans  &trans
+&bt BT_PRV     &kp F5  &kp F6   &kp F7                   &kp F8   &trans                                   &trans  &trans  &trans  &trans  &trans  &trans
+&bt BT_DISC 2  &kp F9  &kp F10  &kp F11                  &kp F12  &trans                 &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                                &mt C_MUTE C_PLAY_PAUSE  &trans   &mt C_PREVIOUS C_NEXT  &trans    &trans  &trans  &trans  &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
