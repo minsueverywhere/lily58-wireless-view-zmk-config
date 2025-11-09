@@ -32,161 +32,193 @@
         cb_1 {
             bindings = <&kp NUMBER_1>;
             key-positions = <52 25>;
+            timeout-ms = <100>;
         };
 
         cb_2 {
             bindings = <&kp NUMBER_2>;
             key-positions = <52 26>;
+            timeout-ms = <100>;
         };
 
         cb_3 {
             bindings = <&kp NUMBER_3>;
             key-positions = <52 27>;
+            timeout-ms = <100>;
         };
 
         cb_4 {
             bindings = <&kp NUMBER_4>;
             key-positions = <52 28>;
+            timeout-ms = <100>;
         };
 
         cb_5 {
             bindings = <&kp NUMBER_5>;
             key-positions = <52 29>;
+            timeout-ms = <100>;
         };
 
         cb_6 {
             bindings = <&kp NUMBER_6>;
             key-positions = <55 30>;
+            timeout-ms = <100>;
         };
 
         cb_7 {
             bindings = <&kp NUMBER_7>;
             key-positions = <55 31>;
+            timeout-ms = <100>;
         };
 
         cb_8 {
             bindings = <&kp NUMBER_8>;
             key-positions = <55 32>;
+            timeout-ms = <100>;
         };
 
         cb_9 {
             bindings = <&kp NUMBER_9>;
             key-positions = <55 33>;
+            timeout-ms = <100>;
         };
 
         cb_0 {
             bindings = <&kp NUMBER_0>;
             key-positions = <55 34>;
+            timeout-ms = <100>;
         };
 
         cb_grave {
             bindings = <&kp GRAVE>;
             key-positions = <52 38>;
+            timeout-ms = <100>;
         };
 
-        cb_- {
+        cb_dash {
             bindings = <&kp MINUS>;
             key-positions = <52 39>;
+            timeout-ms = <100>;
         };
 
         cb_eqaul {
             bindings = <&kp EQUAL>;
             key-positions = <52 40>;
+            timeout-ms = <100>;
         };
 
         cb_lb {
             bindings = <&kp LEFT_BRACKET>;
             key-positions = <55 45>;
+            timeout-ms = <100>;
         };
 
         cb_rb {
             bindings = <&kp RIGHT_BRACKET>;
             key-positions = <55 46>;
+            timeout-ms = <100>;
         };
 
         cb_bs {
             bindings = <&kp BACKSLASH>;
             key-positions = <55 47>;
+            timeout-ms = <100>;
         };
 
         cb_s1 {
             bindings = <&kp EXCLAMATION>;
             key-positions = <52 25 24>;
+            timeout-ms = <100>;
         };
 
         cb_s2 {
             bindings = <&kp AT_SIGN>;
             key-positions = <52 26 24>;
+            timeout-ms = <100>;
         };
 
         cb_s3 {
             bindings = <&kp HASH>;
             key-positions = <52 27 24>;
+            timeout-ms = <100>;
         };
 
         cb_s4 {
             bindings = <&kp DOLLAR>;
             key-positions = <52 28 24>;
+            timeout-ms = <100>;
         };
 
         cb_s5 {
             bindings = <&kp PERCENT>;
             key-positions = <52 29 24>;
+            timeout-ms = <100>;
         };
 
         cb_s6 {
             bindings = <&kp CARET>;
             key-positions = <55 30 35>;
+            timeout-ms = <100>;
         };
 
         cb_s7 {
             bindings = <&kp AMPERSAND>;
             key-positions = <55 31 35>;
+            timeout-ms = <100>;
         };
 
         cb_s8 {
             bindings = <&kp ASTERISK>;
             key-positions = <55 32 35>;
+            timeout-ms = <100>;
         };
 
         cb_s9 {
             bindings = <&kp LEFT_PARENTHESIS>;
             key-positions = <55 33 35>;
+            timeout-ms = <100>;
         };
 
         cb_s0 {
             bindings = <&kp RIGHT_PARENTHESIS>;
             key-positions = <55 34 35>;
+            timeout-ms = <100>;
         };
 
         cb_tilde {
             bindings = <&kp TILDE>;
             key-positions = <52 38 24>;
+            timeout-ms = <100>;
         };
 
-        cb__ {
+        cb_us {
             bindings = <&kp UNDERSCORE>;
             key-positions = <52 39 24>;
+            timeout-ms = <100>;
         };
 
-        cb_+ {
+        cb_plus {
             bindings = <&kp PLUS>;
             key-positions = <52 40 24>;
+            timeout-ms = <100>;
         };
 
         cb_lbc {
             bindings = <&kp LEFT_BRACE>;
             key-positions = <55 45 35>;
+            timeout-ms = <100>;
         };
 
         cb_rbc {
             bindings = <&kp RIGHT_BRACE>;
             key-positions = <55 46 35>;
+            timeout-ms = <100>;
         };
 
         cb_pipe {
             bindings = <&kp PIPE>;
             key-positions = <55 47 35>;
+            timeout-ms = <100>;
         };
     };
 
