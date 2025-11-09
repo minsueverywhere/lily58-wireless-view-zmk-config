@@ -23,186 +23,90 @@
     combos {
         compatible = "zmk,combos";
 
-        LShiftCombo {
-            bindings = <&kp LEFT_SHIFT>;
-            key-positions = <>;
-            slow-release;
-            require-prior-idle-ms = <50>;
-            timeout-ms = <100>;
-        };
-
-        LControlCombo {
-            bindings = <&kp LCTRL>;
-            key-positions = <>;
-            slow-release;
-            require-prior-idle-ms = <50>;
-            timeout-ms = <100>;
-        };
-
-        LAltCombo {
-            bindings = <&kp LEFT_ALT>;
-            key-positions = <>;
-            slow-release;
-            require-prior-idle-ms = <50>;
-            timeout-ms = <100>;
-        };
-
-        LCtrlLShiftCombo {
-            bindings = <&kp LC(LEFT_SHIFT)>;
-            key-positions = <>;
-            slow-release;
-            require-prior-idle-ms = <50>;
-            timeout-ms = <100>;
-        };
-
-        LCtrlLAltCombo {
-            bindings = <&kp LC(LEFT_ALT)>;
-            key-positions = <>;
-            slow-release;
-            require-prior-idle-ms = <50>;
-            timeout-ms = <100>;
-        };
-
-        LCtrlLShiftLAltCombo {
-            bindings = <&kp LC(LA(LEFT_SHIFT))>;
-            key-positions = <>;
-            slow-release;
-            require-prior-idle-ms = <50>;
-            timeout-ms = <100>;
-        };
-
-        RShiftCombo {
-            bindings = <&kp RSHIFT>;
-            key-positions = <>;
-            slow-release;
-            require-prior-idle-ms = <50>;
-            timeout-ms = <100>;
-        };
-
-        RCtrlCombo {
-            bindings = <&kp LEFT_CONTROL>;
-            key-positions = <>;
-            slow-release;
-            require-prior-idle-ms = <50>;
-            timeout-ms = <100>;
-        };
-
-        RLAltCombo {
-            bindings = <&kp LEFT_ALT>;
-            key-positions = <>;
-            slow-release;
-            require-prior-idle-ms = <50>;
-            timeout-ms = <100>;
-        };
-
-        RCtrlRShiftCombo {
-            bindings = <&kp LC(RIGHT_SHIFT)>;
-            key-positions = <>;
-            slow-release;
-            require-prior-idle-ms = <50>;
-            timeout-ms = <100>;
-        };
-
-        RCtrlRAltCombo {
-            bindings = <&kp LC(LEFT_ALT)>;
-            key-positions = <>;
-            slow-release;
-            require-prior-idle-ms = <50>;
-            timeout-ms = <100>;
-        };
-
-        RCtrlRShiftRAltCombo {
-            bindings = <&kp LC(LA(RIGHT_SHIFT))>;
-            key-positions = <>;
-            slow-release;
-            require-prior-idle-ms = <50>;
-            timeout-ms = <100>;
-        };
-
-        LGuiCombo {
-            bindings = <&kp LEFT_GUI>;
-            key-positions = <>;
-            slow-release;
-            require-prior-idle-ms = <200>;
-            timeout-ms = <100>;
-        };
-
-        RGuiCombo {
-            bindings = <&kp RIGHT_GUI>;
-            key-positions = <>;
-            slow-release;
-            require-prior-idle-ms = <200>;
-            timeout-ms = <100>;
-        };
-
-        LShiftLAltCombo {
-            bindings = <&kp LA(LEFT_SHIFT)>;
-            key-positions = <>;
-            slow-release;
-            require-prior-idle-ms = <50>;
-            timeout-ms = <100>;
-        };
-
-        RShiftLAltCombo {
-            bindings = <&kp LA(RIGHT_SHIFT)>;
-            key-positions = <>;
-            slow-release;
-            timeout-ms = <100>;
-            require-prior-idle-ms = <50>;
-        };
-
-        LShiftLGuiCombo {
-            bindings = <&kp LS(LEFT_GUI)>;
-            key-positions = <>;
-            require-prior-idle-ms = <50>;
-            slow-release;
-            timeout-ms = <100>;
-        };
-
-        LCtrlLGuiCombo {
-            bindings = <&kp LC(LEFT_GUI)>;
-            key-positions = <>;
-            require-prior-idle-ms = <50>;
-            slow-release;
-            timeout-ms = <100>;
-        };
-
-        LAltLGuiCombo {
-            bindings = <&kp LA(LEFT_GUI)>;
-            key-positions = <>;
-            require-prior-idle-ms = <50>;
-            slow-release;
-            timeout-ms = <100>;
-        };
-
-        RShiftRGuiCombo {
-            bindings = <&kp LS(RIGHT_GUI)>;
-            key-positions = <>;
-            slow-release;
-            timeout-ms = <100>;
-            require-prior-idle-ms = <50>;
-        };
-
-        LCtrlRGuiCombo {
-            bindings = <&kp LC(RIGHT_GUI)>;
-            key-positions = <>;
-            slow-release;
-            timeout-ms = <100>;
-            require-prior-idle-ms = <50>;
-        };
-
-        LAltRGuiCombo {
-            bindings = <&kp LA(RIGHT_GUI)>;
-            key-positions = <>;
-            slow-release;
-            timeout-ms = <100>;
-            require-prior-idle-ms = <50>;
-        };
-
         M3Combo {
             bindings = <&mkp MB3>;
             key-positions = <5 6>;
             timeout-ms = <100>;
+        };
+
+        cb_1 {
+            bindings = <&kp NUMBER_1>;
+            key-positions = <52 25>;
+        };
+
+        cb_2 {
+            bindings = <&kp NUMBER_2>;
+            key-positions = <52 26>;
+        };
+
+        cb_3 {
+            bindings = <&kp NUMBER_3>;
+            key-positions = <52 27>;
+        };
+
+        cb_4 {
+            bindings = <&kp NUMBER_4>;
+            key-positions = <52 28>;
+        };
+
+        cb_5 {
+            bindings = <&kp NUMBER_5>;
+            key-positions = <52 29>;
+        };
+
+        cb_6 {
+            bindings = <&kp NUMBER_6>;
+            key-positions = <55 30>;
+        };
+
+        cb_7 {
+            bindings = <&kp NUMBER_7>;
+            key-positions = <55 31>;
+        };
+
+        cb_8 {
+            bindings = <&kp NUMBER_8>;
+            key-positions = <55 32>;
+        };
+
+        cb_9 {
+            bindings = <&kp NUMBER_9>;
+            key-positions = <55 33>;
+        };
+
+        cb_0 {
+            bindings = <&kp NUMBER_0>;
+            key-positions = <55 34>;
+        };
+
+        cb_grave {
+            bindings = <&kp GRAVE>;
+            key-positions = <52 38>;
+        };
+
+        cb_- {
+            bindings = <&kp MINUS>;
+            key-positions = <52 39>;
+        };
+
+        cb_eqaul {
+            bindings = <&kp EQUAL>;
+            key-positions = <52 40>;
+        };
+
+        cb_lb {
+            bindings = <&kp LEFT_BRACKET>;
+            key-positions = <55 45>;
+        };
+
+        cb_rb {
+            bindings = <&kp RIGHT_BRACKET>;
+            key-positions = <55 46>;
+        };
+
+        cb_bs {
+            bindings = <&kp BACKSLASH>;
+            key-positions = <55 47>;
         };
     };
 
