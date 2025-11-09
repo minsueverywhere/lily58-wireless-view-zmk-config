@@ -17,7 +17,10 @@
     acceleration-exponent = <1>;
 };
 
-&lt { flavor = "tap-unless-interrupted"; };
+&lt {
+    flavor = "tap-preferred";
+    hold-while-undecided;
+};
 
 / {
     combos {
