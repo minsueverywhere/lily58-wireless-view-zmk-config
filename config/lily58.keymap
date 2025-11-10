@@ -36,7 +36,7 @@
 
         cb_export_get_set {
             bindings = <&mcr_export_get_set>;
-            key-positions = <15 38 22 21 17>;
+            key-positions = <>;
         };
 
         cb_ifelse {
@@ -75,8 +75,6 @@
             #binding-cells = <0>;
             bindings = <&kp LC(X) &kp AT &kp E &kp X &kp P &kp O &kp R &kp T &kp SPACE &kp V &kp A &kp R &kp SPACE &kp LC(V) &kp COLON &kp SPACE &kp LS(O) &kp B &kp J &kp E &kp C &kp T &kp SPACE &kp EQUAL &kp SPACE &kp N &kp U &kp L &kp L &kp COLON &kp RET &kp G &kp E &kp T &kp SPACE &kp EQUAL &kp SPACE &kp G &kp E &kp T &kp UNDER &kp LC(V) &kp COMMA &kp SPACE &kp S &kp E &kp T &kp SPACE &kp EQUAL &kp SPACE &kp S &kp E &kp T &kp UNDER &kp LC(V) &kp RET &kp RET &kp F &kp U &kp N &kp C &kp SPACE &kp G &kp E &kp T &kp UNDER &kp LC(V) &kp LPAR &kp RPAR &kp COLON &kp RET &kp R &kp E &kp T &kp U &kp R &kp N &kp SPACE &kp LC(V) &kp RET &kp RET &kp F &kp U &kp N &kp C &kp SPACE &kp S &kp E &kp T &kp UNDER &kp LC(V) &kp LPAR &kp V &kp A &kp L &kp U &kp E &kp COLON &kp SPACE &kp LS(O) &kp B &kp J &kp E &kp C &kp T &kp RPAR &kp COLON &kp RET &kp LC(V) &kp SPACE &kp EQUAL &kp SPACE &kp V &kp A &kp L &kp U &kp E &kp RET>;
             label = "MCR_EXPORT_GET_SET";
-            tap-ms = <5000>;
-            wait-ms = <10>;
         };
 
         mcr_ifelse: mcr_ifelse {
@@ -96,17 +94,15 @@
         mcr_dictionary: mcr_dictionary {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp V &kp A &kp R &kp SPACE &kp UNDER &kp D &kp I &kp C &kp T &kp COLON &kp SPACE &kp LS(D) &kp I &kp C &kp T &kp I &kp O &kp N &kp A &kp R &kp Y &kp SPACE &kp EQUAL &kp SPACE &kp LBRC &kp RET &kp K &kp COLON &kp SPACE &kp V &kp COMMA &kp RET &kp RBRC &kp UP_ARROW &kp UP_ARROW &kp LC(RIGHT_ARROW)>;
+            bindings = <&kp V &kp A &kp R &kp SPACE &kp UNDER &kp D &kp I &kp C &kp T &kp COLON &kp SPACE &kp LS(D) &kp I &kp C &kp ENTER &kp SPACE &kp EQUAL &kp SPACE &kp LBRC &kp RET &kp K &kp COLON &kp SPACE &kp V &kp COMMA &kp ESCAPE &kp UP_ARROW &kp LC(LEFT_ARROW)>;
             label = "MCR_DICTIONARY";
-            wait-ms = <10>;
         };
 
         mcr_print_test: mcr_print_test {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp P &kp R &kp I &kp N &kp T &kp LPAR &kp SQT &kp T &kp E &kp S &kp T &kp MINUS &kp SQT &kp RPAR &kp SPACE &kp POUND &kp SPACE &kp LS(T) &kp LS(E) &kp LS(S) &kp LS(T) &kp LC(LEFT_ARROW) &kp LC(LEFT_ARROW) &kp LC(LEFT_ARROW)>;
+            bindings = <&kp P &kp R &kp I &kp N &kp T &kp LPAR &kp SQT &kp T &kp E &kp S &kp T &kp SQT &kp RPAR &kp SPACE &kp POUND &kp SPACE &kp LS(T) &kp LS(E) &kp LS(S) &kp LS(T) &kp HOME &kp LC(RIGHT_ARROW) &kp LC(RIGHT_ARROW) &kp MINUS>;
             label = "MCR_PRINT_TEST";
-            wait-ms = <10>;
         };
     };
 
