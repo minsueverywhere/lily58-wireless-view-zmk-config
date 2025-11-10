@@ -29,468 +29,80 @@
             timeout-ms = <100>;
         };
 
-        cb_sion {
-            bindings = <&mcr_sion>;
-            key-positions = <21 20 26 44>;
+        cb_region {
+            bindings = <&mcr_region>;
+            key-positions = <16 15 20 21 44>;
         };
 
-        cb_tion {
-            bindings = <&mcr_tion>;
-            key-positions = <17 20 21 44>;
+        cb_export_get_set {
+            bindings = <&mcr_export_get_set>;
+            key-positions = <15 38 22 21 17>;
         };
 
-        cb_ment {
-            bindings = <&mcr_ment>;
-            key-positions = <45 15 17>;
+        cb_ifelse {
+            bindings = <&mcr_ifelse>;
+            key-positions = <20 28 15 26 33>;
         };
 
-        cb_ness {
-            bindings = <&mcr_less>;
-            key-positions = <44 15 26>;
+        cb_match {
+            bindings = <&mcr_match>;
+            key-positions = <45 25 39 17>;
         };
 
-        cb_less {
-            bindings = <&mcr_ness>;
-            key-positions = <26 15 33 33>;
+        cb_dictionary {
+            bindings = <&mcr_dictionary>;
+            key-positions = <27 17 20 21 44>;
         };
 
-        cb_able {
-            bindings = <&mcr_able>;
-            key-positions = <25 41 33 15>;
-        };
-
-        cb_over {
-            bindings = <&mcr_over>;
-            key-positions = <21 40 15>;
-        };
-
-        cb_tive {
-            bindings = <&mcr_tive>;
-            key-positions = <20 17 15>;
-        };
-
-        cb_lity {
-            bindings = <&mcr_lity>;
-            key-positions = <17 33 20 18>;
-        };
-
-        cb_anti {
-            bindings = <&mcr_anti>;
-            key-positions = <25 17 44 20>;
-        };
-
-        cb_self {
-            bindings = <&mcr_self>;
-            key-positions = <26 15 33 28>;
-        };
-
-        cb_ward {
-            bindings = <&mcr_ward>;
-            key-positions = <14 25 16 27>;
-        };
-
-        cb_super {
-            bindings = <&mcr_super>;
-            key-positions = <26 19 22 15 16>;
-        };
-
-        cb_inter {
-            bindings = <&mcr_inter>;
-            key-positions = <20 44 17 15>;
-        };
-
-        cb_under {
-            bindings = <&mcr_under>;
-            key-positions = <19 27 16>;
-        };
-
-        cb_extra {
-            bindings = <&mcr_extra>;
-            key-positions = <15 38 17 25>;
-        };
-
-        cb_func {
-            bindings = <&new_func>;
-            key-positions = <28 19 39>;
-        };
-
-        cb_enum {
-            bindings = <&mcr_enum>;
-            key-positions = <15 44 45>;
-        };
-
-        cb_const {
-            bindings = <&mcr_const>;
-            key-positions = <39 21 44 26 17>;
-        };
-
-        cb_class {
-            bindings = <&mcr_class>;
-            key-positions = <39 33 25 26>;
-        };
-
-        cb_static {
-            bindings = <&mcr_static>;
-            key-positions = <26 25 17 39 20>;
-        };
-
-        cb_export {
-            bindings = <&mcr_export>;
-            key-positions = <15 38 22 16 21>;
-        };
-
-        cb_extend {
-            bindings = <&mcr_extend>;
-            key-positions = <15 38 44 17>;
-        };
-
-        cb_position {
-            bindings = <&mcr_position>;
-            key-positions = <22 21 26 17 44 20>;
-        };
-
-        cb_queue {
-            bindings = <&mcr_queue>;
-            key-positions = <13 15 19>;
-        };
-
-        cb_yield {
-            bindings = <&mcr_yield>;
-            key-positions = <18 15 20 33>;
-        };
-
-        cb_should {
-            bindings = <&mcr_should>;
-            key-positions = <26 21 30 27>;
-        };
-
-        cb_would {
-            bindings = <&mcr_would>;
-            key-positions = <14 21 19 27>;
-        };
-
-        cb_could {
-            bindings = <&mcr_could>;
-            key-positions = <39 21 19>;
-        };
-
-        cb_delta {
-            bindings = <&mcr_delta>;
-            key-positions = <27 17 33 25>;
-        };
-
-        cb_vector {
-            bindings = <&mcr_vector>;
-            key-positions = <40 21 39>;
-        };
-
-        cb_button {
-            bindings = <&mcr_button>;
-            key-positions = <19 21 41>;
-        };
-
-        cb_return {
-            bindings = <&mcr_return>;
-            key-positions = <16 15 19>;
+        cb_print_test {
+            bindings = <&mcr_print_test>;
+            key-positions = <22 20 17 15 26>;
         };
     };
 
     macros {
-        mcr_sion: mcr_sion {
+        mcr_region: mcr_region {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp S &kp I &kp O &kp N>;
-            label = "MCR_SION";
-            wait-ms = <5>;
-            tap-ms = <5>;
+            bindings = <&kp POUND &kp R &kp E &kp G &kp I &kp O &kp N &kp RET &kp POUND &kp E &kp N &kp D &kp R &kp E &kp G &kp I &kp O &kp N &kp UP_ARROW &kp SPACE>;
+            label = "MCR_REGION";
+            wait-ms = <10>;
+            tap-ms = <10>;
         };
 
-        mcr_tion: mcr_tion {
+        mcr_export_get_set: mcr_export_get_set {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp T &kp I &kp O &kp N>;
-            label = "MCR_TION";
-            wait-ms = <5>;
-            tap-ms = <5>;
+            bindings = <&kp LC(X) &kp AT &kp E &kp X &kp P &kp O &kp R &kp T &kp SPACE &kp V &kp A &kp R &kp SPACE &kp LC(V) &kp COLON &kp SPACE &kp LS(O) &kp B &kp J &kp E &kp C &kp T &kp SPACE &kp EQUAL &kp SPACE &kp N &kp U &kp L &kp L &kp COLON &kp RET &kp G &kp E &kp T &kp SPACE &kp EQUAL &kp SPACE &kp G &kp E &kp T &kp UNDER &kp LC(V) &kp COMMA &kp SPACE &kp S &kp E &kp T &kp SPACE &kp EQUAL &kp SPACE &kp S &kp E &kp T &kp UNDER &kp LC(V) &kp RET &kp RET &kp F &kp U &kp N &kp C &kp SPACE &kp G &kp E &kp T &kp UNDER &kp LC(V) &kp LPAR &kp RPAR &kp COLON &kp RET &kp R &kp E &kp T &kp U &kp R &kp N &kp SPACE &kp LC(V) &kp RET &kp RET &kp F &kp U &kp N &kp C &kp SPACE &kp S &kp E &kp T &kp UNDER &kp LC(V) &kp LPAR &kp V &kp A &kp L &kp U &kp E &kp COLON &kp SPACE &kp LS(O) &kp B &kp J &kp E &kp C &kp T &kp RPAR &kp COLON &kp RET &kp LC(V) &kp SPACE &kp EQUAL &kp SPACE &kp V &kp A &kp L &kp U &kp E &kp RET>;
+            label = "MCR_EXPORT_GET_SET";
         };
 
-        mcr_ment: mcr_ment {
+        mcr_ifelse: mcr_ifelse {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp M &kp E &kp N &kp T>;
-            label = "MCR_MENT";
-            wait-ms = <5>;
-            tap-ms = <5>;
+            bindings = <&kp I &kp F &kp COLON &kp RET &kp P &kp A &kp S &kp S &kp RET &kp E &kp L &kp S &kp E &kp COLON &kp RET &kp P &kp A &kp S &kp S &kp UP_ARROW &kp UP_ARROW &kp UP_ARROW &kp LEFT_ARROW>;
+            label = "MCR_IFELSE";
         };
 
-        mcr_ness: mcr_ness {
+        mcr_match: mcr_match {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp N &kp E &kp S &kp S>;
-            label = "MCR_NESS";
-            wait-ms = <5>;
-            tap-ms = <5>;
+            bindings = <&kp M &kp A &kp T &kp C &kp H &kp SPACE &kp COLON &kp RET &kp COLON &kp RET &kp P &kp A &kp S &kp S &kp RET &kp UNDER &kp COLON &kp RET &kp P &kp A &kp S &kp S &kp UP_ARROW &kp UP_ARROW &kp UP_ARROW &kp UP_ARROW &kp END &kp LEFT_ARROW>;
+            label = "MCR_MATCH";
         };
 
-        mcr_less: mcr_less {
+        mcr_dictionary: mcr_dictionary {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp L &kp E &kp S &kp S>;
-            label = "MCR_LESS";
-            wait-ms = <5>;
-            tap-ms = <5>;
+            bindings = <&kp V &kp A &kp R &kp SPACE &kp UNDER &kp D &kp I &kp C &kp T &kp COLON &kp SPACE &kp LS(D) &kp I &kp C &kp T &kp I &kp O &kp N &kp A &kp R &kp Y &kp SPACE &kp EQUAL &kp SPACE &kp LBRC &kp RET &kp K &kp COLON &kp SPACE &kp V &kp COMMA &kp RET &kp RBRC &kp UP_ARROW &kp UP_ARROW &kp LC(RIGHT_ARROW)>;
+            label = "MCR_DICTIONARY";
         };
 
-        mcr_able: mcr_able {
+        mcr_print_test: mcr_print_test {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp A &kp B &kp L &kp E>;
-            label = "MCR_ABLE";
-            wait-ms = <5>;
-            tap-ms = <5>;
-        };
-
-        mcr_over: mcr_over {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp O &kp V &kp E &kp R>;
-            label = "MCR_OVER";
-            wait-ms = <5>;
-            tap-ms = <5>;
-        };
-
-        mcr_tive: mcr_tive {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp T &kp I &kp V &kp E>;
-            label = "MCR_TIVE";
-            wait-ms = <5>;
-            tap-ms = <5>;
-        };
-
-        mcr_lity: mcr_lity {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp L &kp I &kp T &kp Y>;
-            label = "MCR_LITY";
-            wait-ms = <5>;
-            tap-ms = <5>;
-        };
-
-        mcr_anti: mcr_anti {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp A &kp N &kp T &kp I>;
-            label = "MCR_ANTI";
-            wait-ms = <5>;
-            tap-ms = <5>;
-        };
-
-        mcr_self: mcr_self {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp S &kp E &kp L &kp F>;
-            label = "MCR_SELF";
-            wait-ms = <5>;
-            tap-ms = <5>;
-        };
-
-        mcr_ward: mcr_ward {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp W &kp A &kp R &kp D>;
-            label = "MCR_WARD";
-            wait-ms = <5>;
-            tap-ms = <5>;
-        };
-
-        mcr_super: mcr_super {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp S &kp U &kp P &kp E &kp R>;
-            label = "MCR_SUPER";
-            wait-ms = <5>;
-            tap-ms = <5>;
-        };
-
-        mcr_inter: mcr_inter {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp I &kp N &kp T &kp E &kp R>;
-            label = "MCR_INTER";
-            wait-ms = <5>;
-            tap-ms = <5>;
-        };
-
-        mcr_under: mcr_under {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp U &kp N &kp D &kp E &kp R>;
-            label = "MCR_UNDER";
-            wait-ms = <5>;
-            tap-ms = <5>;
-        };
-
-        mcr_extra: mcr_extra {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp E &kp X &kp T &kp R &kp A>;
-            label = "MCR_EXTRA";
-            wait-ms = <5>;
-            tap-ms = <5>;
-        };
-
-        new_func: new_func {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp F &kp U &kp N &kp C>;
-            label = "NEW_FUNC";
-            wait-ms = <5>;
-            tap-ms = <5>;
-        };
-
-        mcr_enum: mcr_enum {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp E &kp N &kp U &kp M>;
-            label = "MCR_ENUM";
-            wait-ms = <5>;
-            tap-ms = <5>;
-        };
-
-        mcr_const: mcr_const {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp C &kp O &kp N &kp S &kp T>;
-            label = "MCR_CONST";
-            wait-ms = <5>;
-            tap-ms = <5>;
-        };
-
-        mcr_class: mcr_class {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp C &kp L &kp A &kp S &kp S>;
-            label = "MCR_CLASS";
-            wait-ms = <5>;
-            tap-ms = <5>;
-        };
-
-        mcr_static: mcr_static {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp S &kp T &kp A &kp T &kp I &kp C>;
-            label = "MCR_STATIC";
-            tap-ms = <5>;
-            wait-ms = <5>;
-        };
-
-        mcr_export: mcr_export {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp E &kp X &kp P &kp O &kp R &kp T>;
-            label = "MCR_EXPORT";
-            wait-ms = <5>;
-            tap-ms = <5>;
-        };
-
-        mcr_extend: mcr_extend {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp E &kp X &kp T &kp E &kp N &kp D>;
-            label = "MCR_EXTEND";
-            wait-ms = <5>;
-            tap-ms = <5>;
-        };
-
-        mcr_position: mcr_position {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp P &kp O &kp S &kp I &kp T &kp I &kp O &kp N>;
-            label = "MCR_POSITION";
-            wait-ms = <5>;
-            tap-ms = <5>;
-        };
-
-        mcr_queue: mcr_queue {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp Q &kp U &kp E &kp U &kp E>;
-            label = "MCR_QUEUE";
-            wait-ms = <5>;
-            tap-ms = <5>;
-        };
-
-        mcr_yield: mcr_yield {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp Y &kp I &kp E &kp L &kp D>;
-            label = "MCR_YIELD";
-            wait-ms = <5>;
-            tap-ms = <5>;
-        };
-
-        mcr_should: mcr_should {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp S &kp H &kp O &kp U &kp L &kp D>;
-            label = "MCR_SHOULD";
-            wait-ms = <5>;
-            tap-ms = <5>;
-        };
-
-        mcr_would: mcr_would {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp W &kp O &kp U &kp L &kp D>;
-            label = "MCR_WOULD";
-            wait-ms = <5>;
-            tap-ms = <5>;
-        };
-
-        mcr_could: mcr_could {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp C &kp O &kp U &kp L &kp D>;
-            label = "MCR_COULD";
-            wait-ms = <5>;
-            tap-ms = <5>;
-        };
-
-        mcr_delta: mcr_delta {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp D &kp E &kp L &kp T &kp A>;
-            label = "MCR_DELTA";
-            wait-ms = <5>;
-            tap-ms = <5>;
-        };
-
-        mcr_vector: mcr_vector {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp V &kp E &kp C &kp T &kp O &kp R>;
-            label = "MCR_VECTOR";
-            wait-ms = <5>;
-            tap-ms = <5>;
-        };
-
-        mcr_button: mcr_button {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp B &kp U &kp T &kp T &kp O &kp N>;
-            label = "MCR_BUTTON";
-            wait-ms = <5>;
-            tap-ms = <5>;
-        };
-
-        mcr_return: mcr_return {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp R &kp E &kp T &kp U &kp R &kp N>;
-            label = "MCR_RETURN";
-            wait-ms = <5>;
-            tap-ms = <5>;
+            bindings = <&kp P &kp R &kp I &kp N &kp T &kp LPAR &kp SQT &kp T &kp E &kp S &kp T &kp MINUS &kp SQT &kp RPAR &kp SPACE &kp POUND &kp SPACE &kp LS(T) &kp LS(E) &kp LS(S) &kp LS(T) &kp LC(LEFT_ARROW) &kp LC(LEFT_ARROW) &kp LC(LEFT_ARROW)>;
+            label = "MCR_PRINT_TEST";
         };
     };
 
