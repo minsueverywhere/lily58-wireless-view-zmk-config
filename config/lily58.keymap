@@ -45,12 +45,12 @@
         };
 
         cb_ness {
-            bindings = <&mcr_ness>;
+            bindings = <&mcr_less>;
             key-positions = <44 15 26>;
         };
 
         cb_less {
-            bindings = <&mcr_less>;
+            bindings = <&mcr_ness>;
             key-positions = <26 15 33 33>;
         };
 
@@ -181,7 +181,7 @@
 
         cb_vector {
             bindings = <&mcr_vector>;
-            key-positions = <40 15 21>;
+            key-positions = <40 21 39>;
         };
 
         cb_button {
