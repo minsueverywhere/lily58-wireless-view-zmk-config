@@ -201,6 +201,8 @@
             #binding-cells = <0>;
             bindings = <&kp S &kp I &kp O &kp N>;
             label = "MCR_SION";
+            wait-ms = <5>;
+            tap-ms = <5>;
         };
 
         mcr_tion: mcr_tion {
@@ -208,6 +210,8 @@
             #binding-cells = <0>;
             bindings = <&kp T &kp I &kp O &kp N>;
             label = "MCR_TION";
+            wait-ms = <5>;
+            tap-ms = <5>;
         };
 
         mcr_ment: mcr_ment {
@@ -215,6 +219,8 @@
             #binding-cells = <0>;
             bindings = <&kp M &kp E &kp N &kp T>;
             label = "MCR_MENT";
+            wait-ms = <5>;
+            tap-ms = <5>;
         };
 
         mcr_ness: mcr_ness {
@@ -222,6 +228,8 @@
             #binding-cells = <0>;
             bindings = <&kp N &kp E &kp S &kp S>;
             label = "MCR_NESS";
+            wait-ms = <5>;
+            tap-ms = <5>;
         };
 
         mcr_less: mcr_less {
@@ -229,6 +237,8 @@
             #binding-cells = <0>;
             bindings = <&kp L &kp E &kp S &kp S>;
             label = "MCR_LESS";
+            wait-ms = <5>;
+            tap-ms = <5>;
         };
 
         mcr_able: mcr_able {
@@ -236,6 +246,8 @@
             #binding-cells = <0>;
             bindings = <&kp A &kp B &kp L &kp E>;
             label = "MCR_ABLE";
+            wait-ms = <5>;
+            tap-ms = <5>;
         };
 
         mcr_over: mcr_over {
@@ -243,6 +255,8 @@
             #binding-cells = <0>;
             bindings = <&kp O &kp V &kp E &kp R>;
             label = "MCR_OVER";
+            wait-ms = <5>;
+            tap-ms = <5>;
         };
 
         mcr_tive: mcr_tive {
@@ -250,6 +264,8 @@
             #binding-cells = <0>;
             bindings = <&kp T &kp I &kp V &kp E>;
             label = "MCR_TIVE";
+            wait-ms = <5>;
+            tap-ms = <5>;
         };
 
         mcr_lity: mcr_lity {
@@ -257,6 +273,8 @@
             #binding-cells = <0>;
             bindings = <&kp L &kp I &kp T &kp Y>;
             label = "MCR_LITY";
+            wait-ms = <5>;
+            tap-ms = <5>;
         };
 
         mcr_anti: mcr_anti {
@@ -264,6 +282,8 @@
             #binding-cells = <0>;
             bindings = <&kp A &kp N &kp T &kp I>;
             label = "MCR_ANTI";
+            wait-ms = <5>;
+            tap-ms = <5>;
         };
 
         mcr_self: mcr_self {
@@ -271,6 +291,8 @@
             #binding-cells = <0>;
             bindings = <&kp S &kp E &kp L &kp F>;
             label = "MCR_SELF";
+            wait-ms = <5>;
+            tap-ms = <5>;
         };
 
         mcr_ward: mcr_ward {
@@ -278,6 +300,8 @@
             #binding-cells = <0>;
             bindings = <&kp W &kp A &kp R &kp D>;
             label = "MCR_WARD";
+            wait-ms = <5>;
+            tap-ms = <5>;
         };
 
         mcr_super: mcr_super {
@@ -285,6 +309,8 @@
             #binding-cells = <0>;
             bindings = <&kp S &kp U &kp P &kp E &kp R>;
             label = "MCR_SUPER";
+            wait-ms = <5>;
+            tap-ms = <5>;
         };
 
         mcr_inter: mcr_inter {
@@ -292,6 +318,8 @@
             #binding-cells = <0>;
             bindings = <&kp I &kp N &kp T &kp E &kp R>;
             label = "MCR_INTER";
+            wait-ms = <5>;
+            tap-ms = <5>;
         };
 
         mcr_under: mcr_under {
@@ -299,6 +327,8 @@
             #binding-cells = <0>;
             bindings = <&kp U &kp N &kp D &kp E &kp R>;
             label = "MCR_UNDER";
+            wait-ms = <5>;
+            tap-ms = <5>;
         };
 
         mcr_extra: mcr_extra {
@@ -306,6 +336,8 @@
             #binding-cells = <0>;
             bindings = <&kp E &kp X &kp T &kp R &kp A>;
             label = "MCR_EXTRA";
+            wait-ms = <5>;
+            tap-ms = <5>;
         };
 
         new_func: new_func {
@@ -313,6 +345,8 @@
             #binding-cells = <0>;
             bindings = <&kp F &kp U &kp N &kp C>;
             label = "NEW_FUNC";
+            wait-ms = <5>;
+            tap-ms = <5>;
         };
 
         mcr_enum: mcr_enum {
@@ -320,6 +354,8 @@
             #binding-cells = <0>;
             bindings = <&kp E &kp N &kp U &kp M>;
             label = "MCR_ENUM";
+            wait-ms = <5>;
+            tap-ms = <5>;
         };
 
         mcr_const: mcr_const {
@@ -327,6 +363,8 @@
             #binding-cells = <0>;
             bindings = <&kp C &kp O &kp N &kp S &kp T>;
             label = "MCR_CONST";
+            wait-ms = <5>;
+            tap-ms = <5>;
         };
 
         mcr_class: mcr_class {
@@ -334,6 +372,8 @@
             #binding-cells = <0>;
             bindings = <&kp C &kp L &kp A &kp S &kp S>;
             label = "MCR_CLASS";
+            wait-ms = <5>;
+            tap-ms = <5>;
         };
 
         mcr_static: mcr_static {
@@ -342,6 +382,7 @@
             bindings = <&kp S &kp T &kp A &kp T &kp I &kp C>;
             label = "MCR_STATIC";
             tap-ms = <5>;
+            wait-ms = <5>;
         };
 
         mcr_export: mcr_export {
@@ -349,7 +390,8 @@
             #binding-cells = <0>;
             bindings = <&kp E &kp X &kp P &kp O &kp R &kp T>;
             label = "MCR_EXPORT";
-            wait-ms = <10>;
+            wait-ms = <5>;
+            tap-ms = <5>;
         };
 
         mcr_extend: mcr_extend {
@@ -357,7 +399,8 @@
             #binding-cells = <0>;
             bindings = <&kp E &kp X &kp T &kp E &kp N &kp D>;
             label = "MCR_EXTEND";
-            wait-ms = <100>;
+            wait-ms = <5>;
+            tap-ms = <5>;
         };
 
         mcr_position: mcr_position {
@@ -365,6 +408,8 @@
             #binding-cells = <0>;
             bindings = <&kp P &kp O &kp S &kp I &kp T &kp I &kp O &kp N>;
             label = "MCR_POSITION";
+            wait-ms = <5>;
+            tap-ms = <5>;
         };
 
         mcr_queue: mcr_queue {
@@ -372,6 +417,8 @@
             #binding-cells = <0>;
             bindings = <&kp Q &kp U &kp E &kp U &kp E>;
             label = "MCR_QUEUE";
+            wait-ms = <5>;
+            tap-ms = <5>;
         };
 
         mcr_yield: mcr_yield {
@@ -379,6 +426,8 @@
             #binding-cells = <0>;
             bindings = <&kp Y &kp I &kp E &kp L &kp D>;
             label = "MCR_YIELD";
+            wait-ms = <5>;
+            tap-ms = <5>;
         };
 
         mcr_should: mcr_should {
@@ -386,6 +435,8 @@
             #binding-cells = <0>;
             bindings = <&kp S &kp H &kp O &kp U &kp L &kp D>;
             label = "MCR_SHOULD";
+            wait-ms = <5>;
+            tap-ms = <5>;
         };
 
         mcr_would: mcr_would {
@@ -393,6 +444,8 @@
             #binding-cells = <0>;
             bindings = <&kp W &kp O &kp U &kp L &kp D>;
             label = "MCR_WOULD";
+            wait-ms = <5>;
+            tap-ms = <5>;
         };
 
         mcr_could: mcr_could {
@@ -400,6 +453,8 @@
             #binding-cells = <0>;
             bindings = <&kp C &kp O &kp U &kp L &kp D>;
             label = "MCR_COULD";
+            wait-ms = <5>;
+            tap-ms = <5>;
         };
 
         mcr_delta: mcr_delta {
@@ -407,6 +462,8 @@
             #binding-cells = <0>;
             bindings = <&kp D &kp E &kp L &kp T &kp A>;
             label = "MCR_DELTA";
+            wait-ms = <5>;
+            tap-ms = <5>;
         };
 
         mcr_vector: mcr_vector {
@@ -414,6 +471,8 @@
             #binding-cells = <0>;
             bindings = <&kp V &kp E &kp C &kp T &kp O &kp R>;
             label = "MCR_VECTOR";
+            wait-ms = <5>;
+            tap-ms = <5>;
         };
 
         mcr_button: mcr_button {
@@ -421,6 +480,8 @@
             #binding-cells = <0>;
             bindings = <&kp B &kp U &kp T &kp T &kp O &kp N>;
             label = "MCR_BUTTON";
+            wait-ms = <5>;
+            tap-ms = <5>;
         };
 
         mcr_return: mcr_return {
@@ -428,6 +489,8 @@
             #binding-cells = <0>;
             bindings = <&kp R &kp E &kp T &kp U &kp R &kp N>;
             label = "MCR_RETURN";
+            wait-ms = <5>;
+            tap-ms = <5>;
         };
     };
 
