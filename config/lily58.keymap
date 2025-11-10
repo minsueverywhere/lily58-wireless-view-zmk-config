@@ -141,7 +141,7 @@
 
         cb_extend {
             bindings = <&mcr_extend>;
-            key-positions = <15 38 17>;
+            key-positions = <15 38 44>;
         };
 
         cb_position {
@@ -341,7 +341,7 @@
             #binding-cells = <0>;
             bindings = <&kp S &kp T &kp A &kp T &kp I &kp C>;
             label = "MCR_STATIC";
-            tap-ms = <500>;
+            tap-ms = <5>;
         };
 
         mcr_export: mcr_export {
