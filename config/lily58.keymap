@@ -31,12 +31,12 @@
 
         cb_sion {
             bindings = <&mcr_sion>;
-            key-positions = <21 20 26>;
+            key-positions = <21 20 26 44>;
         };
 
         cb_tion {
             bindings = <&mcr_tion>;
-            key-positions = <17 20 21>;
+            key-positions = <17 20 21 44>;
         };
 
         cb_ment {
@@ -56,7 +56,7 @@
 
         cb_able {
             bindings = <&mcr_able>;
-            key-positions = <25 41 33>;
+            key-positions = <25 41 33 15>;
         };
 
         cb_over {
@@ -71,32 +71,32 @@
 
         cb_lity {
             bindings = <&mcr_lity>;
-            key-positions = <17 33 20>;
+            key-positions = <17 33 20 18>;
         };
 
         cb_anti {
             bindings = <&mcr_anti>;
-            key-positions = <25 17 44>;
+            key-positions = <25 17 44 20>;
         };
 
         cb_self {
             bindings = <&mcr_self>;
-            key-positions = <26 15 33>;
+            key-positions = <26 15 33 28>;
         };
 
         cb_ward {
             bindings = <&mcr_ward>;
-            key-positions = <14 25 16>;
+            key-positions = <14 25 16 27>;
         };
 
         cb_super {
             bindings = <&mcr_super>;
-            key-positions = <26 19 22>;
+            key-positions = <26 19 22 15 16>;
         };
 
         cb_inter {
             bindings = <&mcr_inter>;
-            key-positions = <20 44 17>;
+            key-positions = <20 44 17 15>;
         };
 
         cb_under {
@@ -106,7 +106,7 @@
 
         cb_extra {
             bindings = <&mcr_extra>;
-            key-positions = <15 38 17>;
+            key-positions = <15 38 17 25>;
         };
 
         cb_func {
@@ -121,32 +121,32 @@
 
         cb_const {
             bindings = <&mcr_const>;
-            key-positions = <39 21 44>;
+            key-positions = <39 21 44 26 17>;
         };
 
         cb_class {
             bindings = <&mcr_class>;
-            key-positions = <39 33 25>;
+            key-positions = <39 33 25 26>;
         };
 
         cb_static {
             bindings = <&mcr_static>;
-            key-positions = <26 25 17>;
+            key-positions = <26 25 17 39 20>;
         };
 
         cb_export {
             bindings = <&mcr_export>;
-            key-positions = <15 38 22>;
+            key-positions = <15 38 22 16 21>;
         };
 
         cb_extend {
             bindings = <&mcr_extend>;
-            key-positions = <15 38 44>;
+            key-positions = <15 38 44 17>;
         };
 
         cb_position {
             bindings = <&mcr_position>;
-            key-positions = <22 21 26>;
+            key-positions = <22 21 26 17 44 20>;
         };
 
         cb_queue {
@@ -156,17 +156,17 @@
 
         cb_yield {
             bindings = <&mcr_yield>;
-            key-positions = <18 15 20>;
+            key-positions = <18 15 20 33>;
         };
 
         cb_should {
             bindings = <&mcr_should>;
-            key-positions = <26 21 30>;
+            key-positions = <26 21 30 27>;
         };
 
         cb_would {
             bindings = <&mcr_would>;
-            key-positions = <14 21 19>;
+            key-positions = <14 21 19 27>;
         };
 
         cb_could {
@@ -176,7 +176,7 @@
 
         cb_delta {
             bindings = <&mcr_delta>;
-            key-positions = <27 17 33>;
+            key-positions = <27 17 33 25>;
         };
 
         cb_vector {
