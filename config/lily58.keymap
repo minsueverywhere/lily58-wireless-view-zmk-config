@@ -119,105 +119,9 @@
             timeout-ms = <100>;
         };
 
-        cb_bs {
+        cb_plus {
             bindings = <&kp BACKSLASH>;
             key-positions = <55 47>;
-            timeout-ms = <100>;
-        };
-
-        cb_s1 {
-            bindings = <&kp EXCLAMATION>;
-            key-positions = <52 25 24>;
-            timeout-ms = <100>;
-        };
-
-        cb_s2 {
-            bindings = <&kp AT_SIGN>;
-            key-positions = <52 26 24>;
-            timeout-ms = <100>;
-        };
-
-        cb_s3 {
-            bindings = <&kp HASH>;
-            key-positions = <52 27 24>;
-            timeout-ms = <100>;
-        };
-
-        cb_s4 {
-            bindings = <&kp DOLLAR>;
-            key-positions = <52 28 24>;
-            timeout-ms = <100>;
-        };
-
-        cb_s5 {
-            bindings = <&kp PERCENT>;
-            key-positions = <52 29 24>;
-            timeout-ms = <100>;
-        };
-
-        cb_s6 {
-            bindings = <&kp CARET>;
-            key-positions = <55 30 35>;
-            timeout-ms = <100>;
-        };
-
-        cb_s7 {
-            bindings = <&kp AMPERSAND>;
-            key-positions = <55 31 35>;
-            timeout-ms = <100>;
-        };
-
-        cb_s8 {
-            bindings = <&kp ASTERISK>;
-            key-positions = <55 32 35>;
-            timeout-ms = <100>;
-        };
-
-        cb_s9 {
-            bindings = <&kp LEFT_PARENTHESIS>;
-            key-positions = <55 33 35>;
-            timeout-ms = <100>;
-        };
-
-        cb_s0 {
-            bindings = <&kp RIGHT_PARENTHESIS>;
-            key-positions = <55 34 35>;
-            timeout-ms = <100>;
-        };
-
-        cb_tilde {
-            bindings = <&kp TILDE>;
-            key-positions = <52 38 24>;
-            timeout-ms = <100>;
-        };
-
-        cb_us {
-            bindings = <&kp UNDERSCORE>;
-            key-positions = <52 39 24>;
-            timeout-ms = <100>;
-        };
-
-        cb_plus {
-            bindings = <&kp PLUS>;
-            key-positions = <52 40 24>;
-            timeout-ms = <100>;
-        };
-
-        cb_lbc {
-            bindings = <&kp LEFT_BRACE>;
-            key-positions = <55 45 35>;
-            timeout-ms = <100>;
-        };
-
-        cb_rbc {
-            bindings = <&kp RIGHT_BRACE>;
-            key-positions = <55 46 35>;
-            timeout-ms = <100>;
-        };
-
-        cb_pipe {
-            bindings = <&kp PIPE>;
-            key-positions = <55 47 35>;
             timeout-ms = <100>;
         };
 
@@ -226,6 +130,140 @@
             key-positions = <50 51>;
             slow-release;
             timeout-ms = <100>;
+        };
+
+        cb_ology {
+            bindings = <&mcr_ology>;
+            key-positions = <29 18 21 33>;
+        };
+
+        cb_tion {
+            bindings = <&mcr_tion>;
+            key-positions = <17 20 21 44>;
+        };
+
+        cb_macro {
+            bindings = <&mcr_ment>;
+            key-positions = <45 44 16 15>;
+        };
+
+        cb_ness {
+            bindings = <&mcr_ness>;
+            key-positions = <44 15 26>;
+        };
+
+        cb_struct {
+            bindings = <&mcr_struct>;
+            key-positions = <26 39 19 17 16>;
+        };
+
+        cb_trans {
+            bindings = <&mcr_trans>;
+            key-positions = <16 25 26 44 17>;
+        };
+
+        cb_inter {
+            bindings = <&mcr_inter>;
+            key-positions = <20 44 15 16 17>;
+        };
+
+        cb_scrip {
+            bindings = <&mcr_scrip>;
+            key-positions = <26 39 16 20 22>;
+        };
+
+        cb_super {
+            bindings = <&mcr_super>;
+            key-positions = <26 19 22 15 16>;
+        };
+
+        cb_graph {
+            bindings = <&mcr_graph>;
+            key-positions = <29 16 25 22 30>;
+        };
+
+        cb_less {
+            bindings = <&mcr_less>;
+            key-positions = <33 15 26>;
+        };
+    };
+
+    macros {
+        mcr_ology: mcr_ology {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp O &kp L &kp O &kp G &kp Y>;
+            label = "MCR_OLOGY";
+        };
+
+        mcr_tion: mcr_tion {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp T &kp I &kp O &kp N>;
+            label = "MCR_TION";
+        };
+
+        mcr_ment: mcr_ment {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp M &kp E &kp N &kp T>;
+            label = "MCR_MENT";
+        };
+
+        mcr_ness: mcr_ness {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp N &kp E &kp S &kp S>;
+            label = "MCR_NESS";
+        };
+
+        mcr_struct: mcr_struct {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp S &kp T &kp R &kp U &kp C &kp T>;
+            label = "MCR_STRUCT";
+        };
+
+        mcr_trans: mcr_trans {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp T &kp R &kp A &kp N &kp S>;
+            label = "MCR_TRANS";
+        };
+
+        mcr_inter: mcr_inter {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp I &kp N &kp T &kp E &kp R>;
+            label = "MCR_INTER";
+        };
+
+        mcr_scrip: mcr_scrip {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp S &kp C &kp R &kp I &kp P>;
+            label = "MCR_SCRIP";
+        };
+
+        mcr_super: mcr_super {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp S &kp U &kp P &kp E &kp R>;
+            label = "MCR_SUPER";
+        };
+
+        mcr_graph: mcr_graph {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp G &kp R &kp A &kp P &kp H>;
+            label = "MCR_GRAPH";
+        };
+
+        mcr_less: mcr_less {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp L &kp E &kp S &kp S>;
+            label = "MCR_LESS";
         };
     };
 
@@ -268,8 +306,8 @@
             display-name = "FN";
             bindings = <
 &trans         &trans  &trans   &trans   &trans   &trans                                        &trans  &trans  &trans  &trans  &trans  &trans
-&bt BT_NXT     &kp F1  &kp F2   &kp F3   &kp F4   &mt C_PREVIOUS C_VOLUME_UP                    &trans  &trans  &trans  &trans  &trans  &trans
-&bt BT_PRV     &kp F5  &kp F6   &kp F7   &kp F8   &mt C_NEXT C_VOLUME_DOWN                      &trans  &trans  &trans  &trans  &trans  &trans
+&bt BT_PRV     &kp F1  &kp F2   &kp F3   &kp F4   &mt C_PREVIOUS C_VOLUME_UP                    &trans  &trans  &trans  &trans  &trans  &trans
+&bt BT_NXT     &kp F5  &kp F6   &kp F7   &kp F8   &mt C_NEXT C_VOLUME_DOWN                      &trans  &trans  &trans  &trans  &trans  &trans
 &bt BT_DISC 2  &kp F9  &kp F10  &kp F11  &kp F12  &mt C_MUTE C_PLAY_PAUSE     &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
                                 &trans   &trans   &trans                      &trans    &trans  &trans  &trans  &trans
             >;
