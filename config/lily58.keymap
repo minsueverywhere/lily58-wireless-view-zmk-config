@@ -14,11 +14,6 @@
 
 &mmv { time-to-max-speed-ms = <500>; };
 
-&lt {
-    tapping-term-ms = <100>;
-    retro-tap;
-};
-
 tapping-term-ms = <100>;
 
 retro-tap {
@@ -111,6 +106,9 @@ macros {
         bindings = <&kp P &kp R &kp I &kp N &kp T &kp LPAR &kp SQT &kp T &kp E &kp S &kp T &kp SQT &kp RPAR &kp SPACE &kp POUND &kp SPACE &kp LS(T) &kp LS(E) &kp LS(S) &kp LS(T) &kp HOME &kp LC(RIGHT_ARROW) &kp LC(RIGHT_ARROW) &kp MINUS>;
         label = "MCR_PRINT_TEST";
     };
+};
+
+macros {
 };
 
 macros {
