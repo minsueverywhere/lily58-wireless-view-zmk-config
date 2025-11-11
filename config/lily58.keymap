@@ -17,9 +17,13 @@
     acceleration-exponent = <1>;
 };
 
-&lt { flavor = "balanced"; };
+tapping-term-ms = <100>;
 
-/ {
+retro-tap {
+    ;};
+
+/
+
     combos {
         compatible = "zmk,combos";
 
@@ -129,10 +133,10 @@
 
             display-name = "Special";
             bindings = <
-&mkp MB4  &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &mkp MB5                    &kp LS(LC(TAB))  &kp HOME  &kp PG_UP  &kp PG_DN  &kp END  &kp LC(TAB)
-&kp F1    &kp F2          &kp F3          &kp F4        &kp F5           &kp F6                      &kp F7           &kp F8    &kp F9     &kp F10    &kp F11  &kp F12
-&trans    &kp N1          &kp N2          &kp N3        &kp N4           &kp N5                      &kp N6           &kp N7    &kp N8     &kp N9     &kp N0   &trans
-&trans    &trans          &kp GRAVE       &kp MINUS     &kp EQUAL        &trans    &trans    &trans  &trans           &kp LBKT  &kp RBKT   &kp BSLH   &trans   &trans
+&mkp MB4  &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &mkp MB5                    &kp LS(LC(TAB))  &kp HOME  &kp PAGE_DOWN  &kp PAGE_UP  &kp END  &kp LC(TAB)
+&kp F1    &kp F2          &kp F3          &kp F4        &kp F5           &kp F6                      &kp F7           &kp F8    &kp F9         &kp F10      &kp F11  &kp F12
+&trans    &kp N1          &kp N2          &kp N3        &kp N4           &kp N5                      &kp N6           &kp N7    &kp N8         &kp N9       &kp N0   &trans
+&trans    &trans          &kp GRAVE       &kp MINUS     &kp EQUAL        &trans    &trans    &trans  &trans           &kp LBKT  &kp RBKT       &kp BSLH     &trans   &trans
                                           &trans        &trans           &trans    &trans    &trans  &trans           &trans    &trans
             >;
 
