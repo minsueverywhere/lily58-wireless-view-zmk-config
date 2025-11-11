@@ -12,14 +12,9 @@
 #define ZMK_POINTING_DEFAULT_MOVE_VAL 3200  // default: 600
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 32    // default: 10
 
- 
-&mmv {
-    time-to-max-speed-ms = <500>;
-};
+&mmv { time-to-max-speed-ms = <500>; };
 
-&lt { 
-    tapping-term-ms = <100>;
-    retro-tap;
+&lt {
 };
 
 / {
@@ -78,8 +73,6 @@
             #binding-cells = <0>;
             bindings = <&kp LC(X) &kp AT &kp E &kp X &kp P &kp O &kp R &kp T &kp SPACE &kp V &kp A &kp R &kp SPACE &kp LC(V) &kp COLON &kp SPACE &kp LS(O) &kp B &kp J &kp E &kp C &kp T &kp SPACE &kp EQUAL &kp SPACE &kp N &kp U &kp L &kp L &kp COLON &kp RET &kp G &kp E &kp T &kp SPACE &kp EQUAL &kp SPACE &kp G &kp E &kp T &kp UNDER &kp LC(V) &kp COMMA &kp SPACE &kp S &kp E &kp T &kp SPACE &kp EQUAL &kp SPACE &kp S &kp E &kp T &kp UNDER &kp LC(V) &kp RET &kp RET &kp F &kp U &kp N &kp C &kp SPACE &kp G &kp E &kp T &kp UNDER &kp LC(V) &kp LPAR &kp RPAR &kp COLON &kp RET &kp R &kp E &kp T &kp U &kp R &kp N &kp SPACE &kp LC(V) &kp RET &kp RET &kp F &kp U &kp N &kp C &kp SPACE &kp S &kp E &kp T &kp UNDER &kp LC(V) &kp LPAR &kp V &kp A &kp L &kp U &kp E &kp COLON &kp SPACE &kp LS(O) &kp B &kp J &kp E &kp C &kp T &kp RPAR &kp COLON &kp RET &kp LC(V) &kp SPACE &kp EQUAL &kp SPACE &kp V &kp A &kp L &kp U &kp E &kp RET>;
             label = "MCR_EXPORT_GET_SET";
-
-
         };
 
         mcr_ifelse: mcr_ifelse {
@@ -101,7 +94,6 @@
             #binding-cells = <0>;
             bindings = <&kp V &kp A &kp R &kp SPACE &kp UNDER &kp D &kp I &kp C &kp T &kp COLON &kp SPACE &kp LS(D) &kp I &kp C &kp ENTER &kp SPACE &kp EQUAL &kp SPACE &kp LBRC &kp RET &kp K &kp COLON &kp SPACE &kp V &kp COMMA &kp ESCAPE &kp UP_ARROW &kp LC(LEFT_ARROW)>;
             label = "MCR_DICTIONARY";
-
         };
 
         mcr_print_test: mcr_print_test {
@@ -109,7 +101,6 @@
             #binding-cells = <0>;
             bindings = <&kp P &kp R &kp I &kp N &kp T &kp LPAR &kp SQT &kp T &kp E &kp S &kp T &kp SQT &kp RPAR &kp SPACE &kp POUND &kp SPACE &kp LS(T) &kp LS(E) &kp LS(S) &kp LS(T) &kp HOME &kp LC(RIGHT_ARROW) &kp LC(RIGHT_ARROW) &kp MINUS>;
             label = "MCR_PRINT_TEST";
-
         };
     };
 
