@@ -15,6 +15,8 @@
 &mmv { time-to-max-speed-ms = <500>; };
 
 &lt {
+    flavor = "balanced";
+    require-prior-idle-ms = <50>;
 };
 
 / {
@@ -23,13 +25,14 @@
 
         M3Combo {
             bindings = <&mkp MB3>;
-            key-positions = <5 6>;
+            key-positions = <6 11>;
             timeout-ms = <100>;
+            layers = <1>;
         };
 
         cb_region {
             bindings = <&mcr_region>;
-            key-positions = <16 15 20 21 44>;
+            key-positions = <>;
         };
 
         cb_export_get_set {
@@ -39,22 +42,22 @@
 
         cb_ifelse {
             bindings = <&mcr_ifelse>;
-            key-positions = <20 28 15 26 33>;
+            key-positions = <>;
         };
 
         cb_match {
             bindings = <&mcr_match>;
-            key-positions = <45 25 39 17>;
+            key-positions = <>;
         };
 
         cb_dictionary {
             bindings = <&mcr_dictionary>;
-            key-positions = <27 17 20 21 44>;
+            key-positions = <>;
         };
 
         cb_print_test {
             bindings = <&mcr_print_test>;
-            key-positions = <22 20 17 15 26>;
+            key-positions = <>;
         };
     };
 
