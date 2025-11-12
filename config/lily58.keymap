@@ -25,85 +25,9 @@
             layers = <3>;
         };
 
-        cb_region {
-            bindings = <&mcr_region>;
-            key-positions = <>;
-        };
-
-        cb_export_get_set {
-            bindings = <&mcr_export_get_set>;
-            key-positions = <>;
-        };
-
-        cb_ifelse {
-            bindings = <&mcr_ifelse>;
-            key-positions = <>;
-        };
-
-        cb_match {
-            bindings = <&mcr_match>;
-            key-positions = <>;
-        };
-
-        cb_dictionary {
-            bindings = <&mcr_dictionary>;
-            key-positions = <>;
-        };
-
-        cb_print_test {
-            bindings = <&mcr_print_test>;
-            key-positions = <>;
-        };
-
         cb_capslock {
             bindings = <&kp CAPSLOCK>;
             key-positions = <24 35>;
-        };
-    };
-
-    macros {
-        mcr_region: mcr_region {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp POUND &kp R &kp E &kp G &kp I &kp O &kp N &kp RET &kp POUND &kp E &kp N &kp D &kp R &kp E &kp G &kp I &kp O &kp N &kp UP_ARROW &kp SPACE>;
-            label = "MCR_REGION";
-            wait-ms = <10>;
-            tap-ms = <10>;
-        };
-
-        mcr_export_get_set: mcr_export_get_set {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LC(X) &kp AT &kp E &kp X &kp P &kp O &kp R &kp T &kp SPACE &kp V &kp A &kp R &kp SPACE &kp LC(V) &kp COLON &kp SPACE &kp LS(O) &kp B &kp J &kp E &kp C &kp T &kp SPACE &kp EQUAL &kp SPACE &kp N &kp U &kp L &kp L &kp COLON &kp RET &kp G &kp E &kp T &kp SPACE &kp EQUAL &kp SPACE &kp G &kp E &kp T &kp UNDER &kp LC(V) &kp COMMA &kp SPACE &kp S &kp E &kp T &kp SPACE &kp EQUAL &kp SPACE &kp S &kp E &kp T &kp UNDER &kp LC(V) &kp RET &kp RET &kp F &kp U &kp N &kp C &kp SPACE &kp G &kp E &kp T &kp UNDER &kp LC(V) &kp LPAR &kp RPAR &kp COLON &kp RET &kp R &kp E &kp T &kp U &kp R &kp N &kp SPACE &kp LC(V) &kp RET &kp RET &kp F &kp U &kp N &kp C &kp SPACE &kp S &kp E &kp T &kp UNDER &kp LC(V) &kp LPAR &kp V &kp A &kp L &kp U &kp E &kp COLON &kp SPACE &kp LS(O) &kp B &kp J &kp E &kp C &kp T &kp RPAR &kp COLON &kp RET &kp LC(V) &kp SPACE &kp EQUAL &kp SPACE &kp V &kp A &kp L &kp U &kp E &kp RET>;
-            label = "MCR_EXPORT_GET_SET";
-        };
-
-        mcr_ifelse: mcr_ifelse {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp I &kp F &kp SPACE &kp COLON &kp RET &kp P &kp A &kp S &kp S &kp RET &kp LS(TAB) &kp E &kp L &kp S &kp E &kp COLON &kp RET &kp P &kp A &kp S &kp S &kp UP_ARROW &kp UP_ARROW &kp UP_ARROW &kp LEFT_ARROW>;
-            label = "MCR_IFELSE";
-        };
-
-        mcr_match: mcr_match {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp M &kp A &kp T &kp C &kp H &kp SPACE &kp COLON &kp RET &kp COLON &kp RET &kp P &kp A &kp S &kp S &kp RET &kp LS(TAB) &kp UNDER &kp COLON &kp RET &kp P &kp A &kp S &kp S &kp UP_ARROW &kp UP_ARROW &kp UP_ARROW &kp UP_ARROW &kp END &kp LEFT_ARROW>;
-            label = "MCR_MATCH";
-        };
-
-        mcr_dictionary: mcr_dictionary {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp V &kp A &kp R &kp SPACE &kp UNDER &kp D &kp I &kp C &kp T &kp COLON &kp SPACE &kp LS(D) &kp I &kp C &kp ENTER &kp SPACE &kp EQUAL &kp SPACE &kp LBRC &kp RET &kp K &kp COLON &kp SPACE &kp V &kp COMMA &kp ESCAPE &kp UP_ARROW &kp LC(LEFT_ARROW)>;
-            label = "MCR_DICTIONARY";
-        };
-
-        mcr_print_test: mcr_print_test {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp P &kp R &kp I &kp N &kp T &kp LPAR &kp SQT &kp T &kp E &kp S &kp T &kp SQT &kp RPAR &kp SPACE &kp POUND &kp SPACE &kp LS(T) &kp LS(E) &kp LS(S) &kp LS(T) &kp HOME &kp LC(RIGHT_ARROW) &kp LC(RIGHT_ARROW) &kp MINUS>;
-            label = "MCR_PRINT_TEST";
         };
     };
 
