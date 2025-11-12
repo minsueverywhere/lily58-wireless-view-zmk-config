@@ -14,11 +14,6 @@
 
 &mmv { time-to-max-speed-ms = <500>; };
 
-&lt {
-    flavor = "balanced";
-    require-prior-idle-ms = <50>;
-};
-
 / {
     combos {
         compatible = "zmk,combos";
@@ -58,6 +53,11 @@
         cb_print_test {
             bindings = <&mcr_print_test>;
             key-positions = <>;
+        };
+
+        cb_lgui {
+            bindings = <&kp LEFT_GUI>;
+            key-positions = <50 51>;
         };
     };
 
@@ -115,11 +115,11 @@
 
             display-name = "Base";
             bindings = <
-&kp ESCAPE        &kp HOME  &kp PG_DN  &kp PG_UP     &kp END       &kp CAPSLOCK                  &kp INSERT   &kp LEFT         &kp DOWN           &kp UP   &kp RIGHT  &kp DELETE
-&kp TAB           &kp Q     &kp W      &kp E         &kp R         &kp T                         &kp Y        &kp U            &kp I              &kp O    &kp P      &kp BACKSPACE
-&kp LEFT_SHIFT    &kp A     &kp S      &kp D         &kp F         &kp G                         &kp H        &kp J            &kp K              &kp L    &kp SEMI   &kp RIGHT_SHIFT
-&kp LEFT_CONTROL  &kp Z     &kp X      &kp C         &kp V         &kp B         &none    &none  &kp N        &kp M            &kp COMMA          &kp DOT  &kp FSLH   &kp SQT
-                                       &kp LEFT_ALT  &kp LEFT_GUI  &lt 1 SPACE   &none    &none  &lt 1 ENTER  &lt 2 RIGHT_ALT  &kp RIGHT_CONTROL
+&kp ESCAPE        &kp HOME  &kp PG_DN  &kp PG_UP     &kp END  &kp CAPSLOCK                  &kp INSERT  &kp LEFT  &kp DOWN         &kp UP   &kp RIGHT  &kp DELETE
+&kp TAB           &kp Q     &kp W      &kp E         &kp R    &kp T                         &kp Y       &kp U     &kp I            &kp O    &kp P      &kp BACKSPACE
+&kp LEFT_SHIFT    &kp A     &kp S      &kp D         &kp F    &kp G                         &kp H       &kp J     &kp K            &kp L    &kp SEMI   &kp RIGHT_SHIFT
+&kp LEFT_CONTROL  &kp Z     &kp X      &kp C         &kp V    &kp B         &none    &none  &kp N       &kp M     &kp COMMA        &kp DOT  &kp FSLH   &kp SQT
+                                       &kp LEFT_ALT  &mo 1    &kp SPACE     &none    &none  &kp ENTER   &mo 1     &lt 2 RIGHT_ALT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -147,7 +147,7 @@
 &kp F13  &kp F14  &kp F15  &kp F16  &kp F17  &kp F18                    &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_NUMLOCK   &kp CAPSLOCK   &mt C_PREVIOUS C_VOLUME_UP
 &kp F19  &kp F20  &kp F21  &kp F22  &kp F23  &kp F24                    &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_PLUS      &kp KP_MINUS   &mt C_NEXT C_VOLUME_DOWN
 &trans   &trans   &trans   &trans   &trans   &trans   &trans    &trans  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_MULTIPLY  &kp KP_DIVIDE  &mt C_PLAY_PAUSE C_MUTE
-                           &trans   &trans   &trans   &trans    &trans  &kp KP_NUMBER_0  &trans           &kp KP_DOT
+                           &trans   &trans   &trans   &trans    &trans  &kp KP_NUMBER_0  &kp KP_DOT       &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
