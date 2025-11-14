@@ -33,6 +33,11 @@
             key-positions = <55 56>;
             layers = <2>;
         };
+
+        cb_lgui {
+            bindings = <&kp LEFT_GUI>;
+            key-positions = <50 51>;
+        };
     };
 
     behaviors {
