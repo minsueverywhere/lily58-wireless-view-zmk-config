@@ -35,7 +35,8 @@
             label = "STICKY_SHIFT";
             bindings = <&kp>;
             #binding-cells = <1>;
-            release-after-ms = <500>;
+            release-after-ms = <200>;
+            quick-release;
         };
 
         shift_hold_tap: shift_hold_tap {
