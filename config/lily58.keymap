@@ -52,7 +52,7 @@
             label = "STICKY_SHIFT";
             bindings = <&kp>;
             #binding-cells = <1>;
-            release-after-ms = <200>;
+            release-after-ms = <300>;
             quick-release;
         };
 
