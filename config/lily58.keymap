@@ -38,6 +38,7 @@
         cb_lgui {
             bindings = <&kp LEFT_GUI>;
             key-positions = <50 51>;
+            slow-release;
         };
 
         cb_rctrl {
