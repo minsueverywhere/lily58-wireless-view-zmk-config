@@ -15,7 +15,6 @@
 &mmv { time-to-max-speed-ms = <500>; };
 
 &lt {
-    tapping-term-ms = <100>;
     flavor = "tap-preferred";
     retro-tap;
 };
