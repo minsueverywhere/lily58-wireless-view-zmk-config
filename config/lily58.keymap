@@ -25,152 +25,31 @@
 
         cb_keypad_left {
             bindings = <&mo 5>;
-            key-positions = <52 51>;
+            key-positions = <52 50>;
             slow-release;
         };
 
         cb_keypad_right {
             bindings = <&mo 5>;
-            key-positions = <55 56>;
+            key-positions = <55 57>;
             slow-release;
         };
 
         cb_mo2_left {
             bindings = <&mo 2>;
-            key-positions = <50 52>;
+            key-positions = <>;
             slow-release;
         };
 
         cb_mo2_right {
             bindings = <&mo 2>;
-            key-positions = <57 55>;
-            slow-release;
-        };
-
-        cb_lgui_left {
-            bindings = <&kp LEFT_GUI>;
-            key-positions = <50 51>;
-            slow-release;
-        };
-
-        cb_lgui_right {
-            bindings = <&kp LGUI>;
-            key-positions = <56 57>;
-            slow-release;
-        };
-
-        cb_lsg_left {
-            bindings = <&kp LS(LEFT_GUI)>;
-            key-positions = <24 51>;
-            slow-release;
-        };
-
-        cb_lcg_left {
-            bindings = <&kp LC(LEFT_GUI)>;
-            key-positions = <36 51>;
-            slow-release;
-        };
-
-        cb_lag_left {
-            bindings = <&kp LA(LEFT_GUI)>;
             key-positions = <>;
-            slow-release;
-        };
-
-        cb_lsca_left {
-            bindings = <&kp LS(LC(LEFT_ALT))>;
-            key-positions = <>;
-            slow-release;
-        };
-
-        cb_lscg_left {
-            bindings = <&kp LS(LC(LEFT_GUI))>;
-            key-positions = <24 36 51>;
-            slow-release;
-        };
-
-        cb_lcag_left {
-            bindings = <&kp LC(LA(LEFT_GUI))>;
-            key-positions = <36 50 51>;
-            slow-release;
-        };
-
-        cb_lctrl_right {
-            bindings = <&kp LEFT_CONTROL>;
-            key-positions = <48 49>;
-            slow-release;
-        };
-
-        cb_lalt_right {
-            bindings = <&kp LEFT_ALT>;
-            key-positions = <>;
-            slow-release;
-        };
-
-        cb_lgui_right_ {
-            bindings = <&kp LEFT_GUI>;
-            key-positions = <>;
-            slow-release;
-        };
-
-        cb_lsc_right {
-            bindings = <&kp LS(LEFT_CONTROL)>;
-            key-positions = <35 49>;
-            slow-release;
-        };
-
-        cb_lsa_right {
-            bindings = <&kp LS(LEFT_ALT)>;
-            key-positions = <35 57>;
-            slow-release;
-        };
-
-        cb_lsg_right {
-            bindings = <&kp LS(LGUI)>;
-            key-positions = <35 56>;
-            slow-release;
-        };
-
-        cb_lca_right {
-            bindings = <&kp LC(LEFT_ALT)>;
-            key-positions = <49 57>;
-            slow-release;
-        };
-
-        cb_lcg_right {
-            bindings = <&kp LC(LEFT_GUI)>;
-            key-positions = <49 56>;
-            slow-release;
-        };
-
-        cb_lag_right {
-            bindings = <&kp LA(LEFT_GUI)>;
-            key-positions = <>;
-            slow-release;
-        };
-
-        cb_lsca_right {
-            bindings = <&kp LS(LC(LEFT_ALT))>;
-            key-positions = <35 49 57>;
-            slow-release;
-        };
-
-        cb_lscg_right {
-            bindings = <&kp LS(LC(LEFT_GUI))>;
-            key-positions = <35 49 56>;
-            slow-release;
-        };
-
-        cb_lcag_right {
-            bindings = <&kp LC(LA(LEFT_GUI))>;
-            key-positions = <49 57 56>;
             slow-release;
         };
 
         cb_m3 {
             bindings = <&mkp MB3>;
-            key-positions = <55 57>;
-            layers = <1>;
+            key-positions = <51 52>;
         };
     };
 
@@ -244,7 +123,7 @@
 &trans        &kp F9        &kp F10       &kp F11       &kp F12       &mt C_PREVIOUS C_VOLUME_UP                    &kp C_PREVIOUS    &kp F21        &kp F22         &kp F23         &kp F24         &trans
 &trans        &kp F5        &kp F6        &kp F7        &kp F8        &mt C_PP C_MUTE                               &kp C_PLAY_PAUSE  &kp F17        &msc SCRL_UP    &msc SCRL_LEFT  &mmv MOVE_UP    &msc SCRL_RIGHT
 &trans        &kp F1        &kp F2        &kp F3        &kp F4        &mt C_NEXT C_VOLUME_DOWN    &trans    &trans  &kp C_NEXT        &kp F13        &msc SCRL_DOWN  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT
-                                          &none         &trans        &trans                      &trans    &trans  &trans            &trans         &none
+                                          &none         &mkp MB1      &mkp MB2                    &trans    &trans  &mkp MB4          &mkp MB5       &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
