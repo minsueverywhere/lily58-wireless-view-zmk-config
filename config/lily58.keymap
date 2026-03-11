@@ -20,19 +20,19 @@
 
         cb_mo3_left {
             bindings = <&mo 3>;
-            key-positions = <50 39>;
+            key-positions = <52 51>;
             slow-release;
         };
 
         cb_mo3_right {
             bindings = <&mo 3>;
-            key-positions = <57 46>;
+            key-positions = <55 56>;
             slow-release;
         };
 
         cb_lalt_left {
             bindings = <&mo 2>;
-            key-positions = <37 50>;
+            key-positions = <50 52>;
             slow-release;
         };
 
