@@ -142,7 +142,7 @@
         switch_special_layer {
             display-name = "Switch";
             bindings = <
-&kp BACKSLASH         &kp PIPE               &kp SQT          &kp DQT   &kp PERCENT  &kp DELETE                      &kp ESCAPE  &kp CARET  &kp AMPERSAND  &kp ASTERISK    &trans     &trans
+&trans                &kp BACKSLASH          &kp SQT          &kp DQT   &kp PERCENT  &kp DELETE                      &kp ESCAPE  &kp CARET  &kp AMPERSAND  &kp ASTERISK    &kp PIPE   &trans
 &kp EXCL              &kp AT                 &kp POUND        &kp DLLR  &kp COLON    &kp INSERT                      &kp LSHFT   &kp N6     &kp N7         &kp N8          &kp N9     &kp N0
 &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LESS_THAN    &kp GT    &kp PG_UP    &kp QUESTION                    &kp LCTRL   &kp N1     &kp N2         &kp N3          &kp N4     &kp N5
 &kp BACKSPACE         &kp LEFT_BRACE         &kp RIGHT_BRACE  &kp HOME  &kp PG_DN    &kp END       &trans    &trans  &kp LALT    &kp LGUI   &kp TILDE      &kp UNDERSCORE  &kp EQUAL  &kp BACKSPACE
