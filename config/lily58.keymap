@@ -14,195 +14,8 @@
 
 &mmv { time-to-max-speed-ms = <500>; };
 
-&lt {
-    flavor = "tap-preferred";
-    retro-tap;
-};
-
 / {
-    combos {
-        compatible = "zmk,combos";
-
-        cb_mo3_left {
-            bindings = <&mo 3>;
-            key-positions = <52 51>;
-            slow-release;
-        };
-
-        cb_mo3_right {
-            bindings = <&mo 3>;
-            key-positions = <55 56>;
-            slow-release;
-        };
-
-        cb_mo2_left {
-            bindings = <&mo 2>;
-            key-positions = <50 52>;
-            slow-release;
-        };
-
-        cb_mo2_right {
-            bindings = <&mo 2>;
-            key-positions = <57 55>;
-            slow-release;
-        };
-
-        cb_lgui_left {
-            bindings = <&kp LEFT_GUI>;
-            key-positions = <50 51>;
-            slow-release;
-        };
-
-        cb_lgui_right {
-            bindings = <&kp LGUI>;
-            key-positions = <56 57>;
-            slow-release;
-        };
-
-        cb_lsg_left {
-            bindings = <&kp LS(LEFT_GUI)>;
-            key-positions = <24 51>;
-            slow-release;
-        };
-
-        cb_lcg_left {
-            bindings = <&kp LC(LEFT_GUI)>;
-            key-positions = <36 51>;
-            slow-release;
-        };
-
-        cb_lag_left {
-            bindings = <&kp LA(LEFT_GUI)>;
-            key-positions = <>;
-            slow-release;
-        };
-
-        cb_lsca_left {
-            bindings = <&kp LS(LC(LEFT_ALT))>;
-            key-positions = <>;
-            slow-release;
-        };
-
-        cb_lscg_left {
-            bindings = <&kp LS(LC(LEFT_GUI))>;
-            key-positions = <24 36 51>;
-            slow-release;
-        };
-
-        cb_lcag_left {
-            bindings = <&kp LC(LA(LEFT_GUI))>;
-            key-positions = <36 50 51>;
-            slow-release;
-        };
-
-        cb_lctrl_right {
-            bindings = <&kp LEFT_CONTROL>;
-            key-positions = <48 49>;
-            slow-release;
-        };
-
-        cb_lalt_right {
-            bindings = <&kp LEFT_ALT>;
-            key-positions = <>;
-            slow-release;
-        };
-
-        cb_lgui_right_ {
-            bindings = <&kp LEFT_GUI>;
-            key-positions = <>;
-            slow-release;
-        };
-
-        cb_lsc_right {
-            bindings = <&kp LS(LEFT_CONTROL)>;
-            key-positions = <35 49>;
-            slow-release;
-        };
-
-        cb_lsa_right {
-            bindings = <&kp LS(LEFT_ALT)>;
-            key-positions = <35 57>;
-            slow-release;
-        };
-
-        cb_lsg_right {
-            bindings = <&kp LS(LGUI)>;
-            key-positions = <35 56>;
-            slow-release;
-        };
-
-        cb_lca_right {
-            bindings = <&kp LC(LEFT_ALT)>;
-            key-positions = <49 57>;
-            slow-release;
-        };
-
-        cb_lcg_right {
-            bindings = <&kp LC(LEFT_GUI)>;
-            key-positions = <49 56>;
-            slow-release;
-        };
-
-        cb_lag_right {
-            bindings = <&kp LA(LEFT_GUI)>;
-            key-positions = <>;
-            slow-release;
-        };
-
-        cb_lsca_right {
-            bindings = <&kp LS(LC(LEFT_ALT))>;
-            key-positions = <35 49 57>;
-            slow-release;
-        };
-
-        cb_lscg_right {
-            bindings = <&kp LS(LC(LEFT_GUI))>;
-            key-positions = <35 49 56>;
-            slow-release;
-        };
-
-        cb_lcag_right {
-            bindings = <&kp LC(LA(LEFT_GUI))>;
-            key-positions = <49 57 56>;
-            slow-release;
-        };
-
-        cb_m3 {
-            bindings = <&mkp MB3>;
-            key-positions = <55 57>;
-            layers = <1>;
-        };
-    };
-
-    behaviors {
-        sticky_shift: sticky_shift {
-            compatible = "zmk,behavior-sticky-key";
-            label = "STICKY_SHIFT";
-            bindings = <&kp>;
-            #binding-cells = <1>;
-            release-after-ms = <300>;
-            quick-release;
-        };
-
-        shift_hold_tap: shift_hold_tap {
-            compatible = "zmk,behavior-hold-tap";
-            label = "SHIFT_HOLD_TAP";
-            bindings = <&kp>, <&sticky_shift>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            quick-tap-ms = <150>;
-        };
-
-        my_shift: my_shift {
-            compatible = "zmk,behavior-mod-morph";
-            label = "MY_SHIFT";
-            #binding-cells = <0>;
-            bindings = <&shift_hold_tap LEFT_SHIFT LEFT_SHIFT>, <&caps_word>;
-
-            mods = <(MOD_LSFT)>;
-        };
-    };
+    combos { compatible = "zmk,combos"; };
 
     keymap {
         compatible = "zmk,keymap";
@@ -212,11 +25,11 @@
 
             display-name = "Base";
             bindings = <
-&kp ESCAPE        &kp N1  &kp N2  &kp N3        &kp N4  &kp N5                       &kp N6       &kp N7  &kp N8     &kp N9   &kp N0    &kp DELETE
-&kp TAB           &kp Q   &kp W   &kp E         &kp R   &kp T                        &kp Y        &kp U   &kp I      &kp O    &kp P     &kp BACKSPACE
-&kp LEFT_SHIFT    &kp A   &kp S   &kp D         &kp F   &kp G                        &kp H        &kp J   &kp K      &kp L    &kp SEMI  &kp RIGHT_SHIFT
-&kp LEFT_CONTROL  &kp Z   &kp X   &kp C         &kp V   &kp B        &none    &none  &kp N        &kp M   &kp COMMA  &kp DOT  &kp FSLH  &kp RIGHT_ALT
-                                  &kp LEFT_ALT  &mo 4   &lt 1 SPACE  &none    &none  &lt 1 ENTER  &mo 4   &mo 3
+&kp ESCAPE        &kp N1  &kp N2  &kp N3        &kp N4  &kp N5                     &kp N6     &kp N7  &kp N8     &kp N9   &kp N0    &kp DELETE
+&kp TAB           &kp Q   &kp W   &kp E         &kp R   &kp T                      &kp Y      &kp U   &kp I      &kp O    &kp P     &kp BACKSPACE
+&kp LEFT_SHIFT    &kp A   &kp S   &kp D         &kp F   &kp G                      &kp H      &kp J   &kp K      &kp L    &kp SEMI  &kp RIGHT_SHIFT
+&kp LEFT_CONTROL  &kp Z   &kp X   &kp C         &kp V   &kp B      &none    &none  &kp N      &kp M   &kp COMMA  &kp DOT  &kp FSLH  &kp RIGHT_ALT
+                                  &kp LEFT_ALT  &mo 1   &kp SPACE  &none    &none  &kp ENTER  &mo 2   &mo 3
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -258,32 +71,6 @@
 &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp N4           &kp N5    &kp N6                       &trans  &trans  &trans  &trans  &trans  &trans
 &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp N1           &kp N2    &kp N3     &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
                                                    &kp KP_NUMBER_0  &kp LEFT  &kp RIGHT  &trans    &trans  &trans  &trans  &trans
-            >;
-
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
-        };
-
-        switch_layer {
-            display-name = "Switch";
-            bindings = <
-&kp N6  &kp N7  &kp N8     &kp N9       &kp N0    &kp DEL                      &kp ESC    &kp N1  &kp N2       &kp N3  &kp N4  &kp N5
-&kp Y   &kp U   &kp I      &kp O        &kp P     &kp BSPC                     &kp TAB    &kp Q   &kp W        &kp E   &kp R   &kp T
-&kp H   &kp J   &kp K      &kp L        &kp SEMI  &kp RSHFT                    &kp LSHFT  &kp A   &kp S        &kp D   &kp F   &kp G
-&kp N   &kp M   &kp COMMA  &kp DOT      &kp FSLH  &kp RALT   &trans    &trans  &kp LCTRL  &kp Z   &kp X        &kp C   &kp V   &kp B
-                           &lt 5 ENTER  &none     &trans     &trans    &trans  &kp LALT   &none   &lt 5 SPACE
-            >;
-
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
-        };
-
-        switch_special_layer {
-            display-name = "Switch";
-            bindings = <
-&kp CARET  &kp AMPERSAND  &kp ASTERISK   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PIPE                     &kp TILDE  &kp EXCLAMATION  &kp AT_SIGN  &kp POUND       &kp DLLR        &kp PRCNT
-&trans     &trans         &trans         &trans                &kp BSLH               &kp DQT                      &kp SQT    &kp GRAVE        &trans       &trans          &trans          &trans
-&trans     &trans         &trans         &trans                &kp COLON              &kp SQT                      &kp LSHFT  &kp EQUAL        &trans       &trans          &trans          &trans
-&kp LBKT   &kp RBKT       &kp LESS_THAN  &kp GREATER_THAN      &kp QMARK              &kp RCTRL  &trans    &trans  &kp LCTRL  &kp PLUS         &kp MINUS    &kp UNDERSCORE  &kp LEFT_BRACE  &kp RIGHT_BRACE
-                                         &none                 &none                  &trans     &trans    &trans  &kp LALT   &none            &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
